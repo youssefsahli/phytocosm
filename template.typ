@@ -1,10 +1,11 @@
 #import "@preview/hydra:0.5.1": hydra
 #import "@preview/numberingx:0.0.1"
 #import "/boxes.typ"
+#import "@preview/use-tabler-icons:0.8.0": *
 
 #let body-font-size = 14pt
 #let title-font-size = 2em
-#let subtitle-font-size = 0.8em
+#let subtitle-font-size = 0.6em
 #let small-font-size = 0.8em
 #let italic-font-size = 0.9em
 
