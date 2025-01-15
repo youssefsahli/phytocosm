@@ -1,0 +1,14 @@
+# Fdb version 4
+["pdflatex"] 1731319257.91836 "structure.tex" "structure.pdf" "structure" 1731319258.13322 2
+  "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1716849630 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1716849630 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1716849630 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
+  "/usr/share/texmf-dist/web2c/texmf.cnf" 1716849630 41588 b43d3e860a4f94167ee1e725ff526a72 ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1728558154 7113024 8430f4df010d6bd812606c58f8e471e5 ""
+  "structure.aux" 1731319189.17449 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
+  "structure.tex" 1731319257.84543 2168 6b288a5810d9654e32d31ec7597e6636 ""
+  (generated)
+  "structure.aux"
+  "structure.log"
+  "structure.pdf"
+  (rewritten before read)
