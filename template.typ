@@ -8,9 +8,9 @@
 #let small-font-size = 0.8em
 #let italic-font-size = 0.75em
 
-#let mono-font = "MonaspiceNe NF"
-#let serif-font = "ETBembo"
-#let italic-font = "MonaspiceXe NFM"
+#let mono-font = "Linux Libertine Mono"
+#let serif-font = "Libre Baskerville"
+#let italic-font = "Cantarell"
 
 #let body-font = serif-font
 #let title-font = serif-font
@@ -138,8 +138,8 @@
         font: body-font,
         // alternates: true,
         ligatures: true,
-        discretionary-ligatures: true,
-        historical-ligatures: true,
+        discretionary-ligatures: false,
+        historical-ligatures: false,
         slashed-zero: true,
         // fallback: false,
         lang: "fr",
@@ -199,6 +199,6 @@
 
     pagebreak(weak:true)
     set page(header: [])
-    bibliography("bib/library.bib", style: "vancouver-superscript") 
+    bibliography("zotero.bib", style: "vancouver-superscript") 
 }
 
