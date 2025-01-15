@@ -2,14 +2,14 @@
 #import "@preview/numberingx:0.0.1"
 #import "/boxes.typ"
 
-#let body-font-size = 15pt
+#let body-font-size = 14pt
 #let title-font-size = 2em
-#let subtitle-font-size = 0.6em
+#let subtitle-font-size = 0.8em
 #let small-font-size = 0.8em
-#let italic-font-size = 0.75em
+#let italic-font-size = 0.9em
 
 #let mono-font = "Linux Libertine Mono"
-#let serif-font = "Libre Baskerville"
+#let serif-font = "ETBembo"
 #let italic-font = "Cantarell"
 
 #let body-font = serif-font
@@ -99,7 +99,7 @@
     }
 
     show emph: it => {
-        set text(font: italic-font, size: italic-font-size)
+        set text(font: italic-font, size: italic-font-size, style: "italic")
         it
     }
 
@@ -121,7 +121,7 @@
 
     set par(
         justify:true,
-        leading: 0.7em,
+        leading: 1em,
     )
 
     set table(
