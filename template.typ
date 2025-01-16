@@ -9,7 +9,7 @@
 #let small-font-size = 0.8em
 #let italic-font-size = 0.9em
 
-#let mono-font = "Linux Libertine Mono"
+#let mono-font = "Reforma 1918"
 #let serif-font = "ETBembo"
 #let italic-font = "Cantarell"
 

@@ -16,6 +16,8 @@ Le derme a une épaisseur variable#footnote(label("4")) et possède la structure
 
 La jonction dermo-épidermique est l'interface entre la couche basale de l'épiderme et la couche supérieure du derme. Difficilement visible en coloration de routine #footnote[Hématoxyline et Éosine; ou Hématoxyline, Phloxine et Safran], elle se compose de crêtes épidermiques et de papilles dermiques, formant des ondulations irrégulières permettant une meilleure adhésion entre les deux couches.
 
+
+
 #hide[#footnote[Bactéries, UV, irritants] #label("1")]
 
 #hide[#footnote[Contrairement à l'épiderme] #label("2")]
