@@ -14,8 +14,7 @@ On estime la durée physiologique du renouvellement de la peau à 40 jours envir
 Le derme a une épaisseur variable#footnote(label("4")) et possède la structure nécessaire à l'innervation et l'irrigation de l'épiderme#cite(label("noauthor_skin_2019")). Il projette des digitations (#emph[dermal papillae] #cite(label("morgan_dermal_2014"))) en direction de ce dernier; ces projections contiennent des progéniteurs du follicule pileux, et déterminent la fréquence de régénération et la qualité de ces derniers.
 
 
-La jonction dermo-épidermique est l'interface entre la couche basale de l'épiderme et la couche supérieure du derme. Difficilement visible en coloration de routine #footnote[Hématoxyline + Éosine; Hématoxyline + Phloxine + Safran]
-
+La jonction dermo-épidermique est l'interface entre la couche basale de l'épiderme et la couche supérieure du derme. Difficilement visible en coloration de routine #footnote[Hématoxyline et Éosine; ou Hématoxyline, Phloxine et Safran], elle se compose de crêtes épidermiques et de papilles dermiques, formant des ondulations irrégulières permettant une meilleure adhésion entre les deux couches.
 
 #hide[#footnote[Bactéries, UV, irritants] #label("1")]
 
