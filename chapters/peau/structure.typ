@@ -3,7 +3,7 @@
 }
 #line(length: 100%)
 #emph[Influence de la structure cellulaire et moléculaire de l'appareil tégumentaire dans les processus de protection et de maintien de la peau.]
-#heading(level: 1)[Histologie] #label("org12b248f")
+#Dr. Alberto Corbi BellotDr. Alberto Corbi Bellotheading(level: 1)[Histologie] #label("org12b248f")
 La peau se compose de trois couches majeures dont l'épiderme est la plus externe. En dessous, on retrouve le derme, recouvrant l'hypoderme#footnote(label("3")). Chacune est composée de différentes strates: l'épiderme est composé — en partant du derme vers l'extérieur — du stratum basale, du stratum spinosum, du stratum granulosum, du stratum lucidum, et enfin du stratum corneum. La composition en cellules de chaque strate diffère en fonction de nombreux paramètres dont la position et l'âge du sujet.#cite(label("marie-danielle_improving_2014"))
 Il existe différents types de cellules: les kératinocytes sont les plus nombreux dans l'épiderme, mais on peut aussi y voir des cellules de Langerhans, et des cellules de Merkel en plus petit nombre. #cite(label("agarwal_histology_2024"))
 

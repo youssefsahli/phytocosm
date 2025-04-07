@@ -110,7 +110,7 @@
             "1: ",
             ..counter(footnote).at(loc),
         )
-        it.note.body
+          it.note.body
     }
 
     set footnote(numbering: "1")

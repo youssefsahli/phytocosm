@@ -1,7 +1,7 @@
 #import "template.typ": title
 
 #title[Planning]
-+ Litérature: _Analyse_
++ Littérature: _Analyse_
 + Comparaison de PA selon la plante
     + Formulations spécifiques
     + Succès et Échecs de différents produits
@@ -12,5 +12,5 @@
     + Ethnobotanique
 + Paysage législatif
     + Produits bannis
-    + Evolution
+    + Évolution
 + Formulations
