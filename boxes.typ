@@ -1,4 +1,5 @@
-#import "@preview/showybox:2.0.1": showybox
+#import "@preview/showybox:2.0.4": showybox
+#import "@preview/frame-it:1.1.2": *
 // Basic box
 #let simplebox(content, bg: white) = {
     showybox(

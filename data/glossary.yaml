@@ -1,0 +1,57 @@
+CPA:
+  short: CPA
+  long: cellule présentatrice d'antigène
+  longplural: cellules présentatrices d'antigène
+
+IL-1:
+  short: IL-1
+  long: interleukine-1
+
+IL-6:
+  short: IL-6
+  long: interleukine-6
+
+TNF-α:
+  short: TNF-α
+  long: facteur de nécrose tumorale alpha
+
+MMP:
+  short: MMP
+  long: métalloprotéinase matricielle
+
+TLR:
+  short: TLR
+  long: récepteur Toll-like
+  longplural: récepteurs Toll-like
+
+DC:
+  short: DC
+  long: cellule dendritique
+  longplural: cellules dendritiques
+
+NK:
+  short: NK
+  long: lymphocyte Natural Killer
+  longplural: lymphocytes Natural Killer
+
+UV:
+  short: UV
+  long: ultraviolet
+  longplural: ultraviolets
+
+ROS:
+  short: ROS
+  long: espèces réactives de l’oxygène
+
+TEWL:
+  short: TEWL
+  long: perte en eau transépidermique
+
+SLS:
+  short: SLS
+  long: laurylsulfate de sodium
+
+UVB:
+  short: UVB
+  long: rayonnement ultraviolet B
+  longplural: rayonnements ultraviolets B

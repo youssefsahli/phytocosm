@@ -7,11 +7,12 @@
 #let title-font-size = 2em
 #let subtitle-font-size = 0.6em
 #let small-font-size = 0.8em
-#let italic-font-size = 0.9em
+#let italic-font-size = 1.1em
 
-#let mono-font = "Reforma 1918"
+#let mono-font = "New Computer Modern"
 #let serif-font = "ETBembo"
-#let italic-font = "Cantarell"
+#let italic-font = "Adobe Garamond Pro"
+
 
 #let body-font = serif-font
 #let title-font = serif-font
@@ -22,6 +23,11 @@
 #let sepia-bg = sepia.transparentize(90%)
 
 #let figure-spacing = 1em
+
+#let chapter(p, pb: true) = [
+  #if pb [#pagebreak(weak: true)]
+  #include(p)
+]
 
 #let small(content) = {
     text(size: small-font-size)[#content]
@@ -54,6 +60,11 @@
     #set text(font: subtitle-font, size: subtitle-font-size)
     #t
 ])
+
+#let desc(t) = {
+    line(length: 100%)
+    emph[#t]
+  } 
 
 #let project(body) = {
 
@@ -100,7 +111,7 @@
     }
 
     show emph: it => {
-        set text(font: italic-font, size: italic-font-size, style: "italic")
+        set text(font: italic-font, size: italic-font-size)
         it
     }
 

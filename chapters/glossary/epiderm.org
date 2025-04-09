@@ -1,6 +1,0 @@
-* Index
-- trichrome de Masson :: Technique de coloration 
-- kératinocyte :: Cellules majoritaires de l'épiderme 
-- cellules de Langerhans :: Cellules dendritiques dont les ramifications du cytoplasme facilitent la présentation des antigènes au lymphocytes
-- cellules de Merkel :: Cellules jouant un rôle dans la mécano-réception
-- kératinisation :: Accumulation de filaments de kératine au sein des cellules de l'épiderme

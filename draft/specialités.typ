@@ -1,4 +1,4 @@
-#import "template.typ": title, taxon, mbox, grbox, pbox
+#import "/template.typ": title, taxon, mbox, grbox, pbox
 #import "acronyms.typ": *
 
 #show link: underline
