@@ -69,7 +69,7 @@
 #let project(body) = {
 
     show outline: body => {
-        set text(body-font-size)
+        set text(size: body-font-size)
         set align(center)
         body
     }
@@ -118,13 +118,13 @@
     show footnote.entry: it => {
         let loc = it.note.location()
         numbering(
-            "1: ",
+            "①: ",
             ..counter(footnote).at(loc),
         )
           it.note.body
     }
 
-    set footnote(numbering: "1")
+    set footnote(numbering: "①")
     set footnote.entry(separator: none)
 
     set super(typographic: false)
@@ -163,7 +163,24 @@
     )
 
     set heading(
-        numbering: "A.1 a ",
+        // numbering: "A.1 a ",
+        numbering: (..nums) => {
+          let args = nums.pos()
+          let counter = 0
+          let res = ()
+          let sep = ("\u{25B8}", "\u{25B9}", "\u{2981}")
+          for i in args {
+            if counter == 0 { 
+              res.push(str.from-unicode(64+i))
+            } else if counter == 1 {
+              res.push(str(i))
+            } else if counter == 2 {
+              res.push(str.from-unicode(95+i))
+            }
+            counter = counter + 1
+          }
+          return res.join(".") + " " + sep.at(counter - 1, default: ".")
+        },
         bookmarked: true,
     )
 

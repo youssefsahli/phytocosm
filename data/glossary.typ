@@ -30,7 +30,6 @@
     align(center)[
       #upper(title)
     ]
-    
     v(10pt)
     body
   },
