@@ -17,9 +17,8 @@
 #show: init-glossary.with(yaml("glossary.yaml"))
 
 #let capitalize(word) = {
-  return upper(word.first()) + lower(word.slice(1))
+  return upper(word.first()) + word.slice(1)
 }
-
 
 #let ys-theme = (
   // Renders the main glossary section with minimal spacing
@@ -27,7 +26,11 @@
   //   title: The glossary section title
   //   body: Content containing all groups and entries
   section: (title, body) => {
-    align(center)[#rect(pad(x: 100%, y: 2pt)[#upper(title)])]
+    // align(center, pad(x: 100%, y: 2pt, upper(title)))
+    align(center)[
+      #upper(title)
+    ]
+    
     v(10pt)
     body
   },
@@ -40,14 +43,19 @@
   //   body: Content containing the group's entries
   group: (name, index, total, body) => {
     if name != "" and total > 1 {
-      block(
-        spacing: 0.5em,
-        pad(
-          top: 0.5em,
-          text(weight: "bold", size: 0.9em, name)
-        )
+      v(1em)
+      
+      align(center, 
+        rect(
+          stroke: none,
+        text(size: 1.1em, tracking: 2pt, weight: "bold", fill: gray.darken(80%))[
+         #name
+        ]
       )
+      // align(center, line(length: 40%, stroke: sepia.transparentize(80%)))
+    )
     }
+    v(0.4em)
     body
   },
 
@@ -66,24 +74,24 @@
     let term = text(
       weight: "medium",
       fill: gray.darken(60%),
-      entry.short
+      capitalize(entry.short)
     )
 
     let long-form = if entry.long == none {
       []
     } else {
-      text(fill: gray.darken(20%), [ #entry.long])
+      text(fill: gray.darken(20%), [ \u{25B8} #entry.long])
     }
 
     let description = if entry.description == none {
       []
     } else {
-      text([· #entry.description])
+      text(style: "italic", )[· #entry.description]
     }
 
     // Create the complete entry with tight spacing
     block(
-      spacing: 0.6em,
+      spacing: 1em,
       grid(
         columns: (auto, 1fr, auto),
         align: left+bottom,
@@ -91,7 +99,8 @@
         // Term and description column
         box[#term#entry.label#long-form #description],
         // Dots....
-        repeat(h(0.25em) + text(fill: gray, ".") + h(0.25em)),
+        // repeat(h(0.25em) + text(fill: gray, ".") + h(0.25em)),
+        h(1em),
         // Page references with smaller font
         text(
           size: 0.8em,
@@ -104,7 +113,7 @@
 )
 
 #glossary(
-  title: "Glossaire",
+  title: "Glossaire & Abbréviations",
   theme: ys-theme, 
   show-all: true
 ) 

@@ -55,3 +55,184 @@ UVB:
   short: UVB
   long: rayonnement ultraviolet B
   longplural: rayonnements ultraviolets B
+
+EGCG:
+  short: EGCG
+  long: Epigallocatechine gallate
+  description: Polyphénol extrait du thé vert aux propriétés antioxydantes reconnues.
+  group: Composés Bioactifs
+
+NaHA:
+  short: NaHA
+  long: Hyaluronate de sodium
+  description: Sel de l'acide hyaluronique, utilisé pour ses propriétés hydratantes et repulpantes.
+  group: Composés Bioactifs
+
+B3:
+  short: B3
+  long: Niacinamide (Vitamine B3)
+  description: Vitamine hydrosoluble aux effets apaisants, anti-inflammatoires et éclaircissants.
+  group: Composés Bioactifs
+
+B5:
+  short: B5
+  long: Panthénol (Pro-Vitamine B5)
+  description: Précurseur de la vitamine B5 aux propriétés réparatrices et hydratantes.
+  group: Composés Bioactifs
+
+NaSA:
+  short: NaSA
+  long: Salicylate de sodium
+  description: Dérivé de l'acide salicylique aux propriétés kératolytiques et anti-inflammatoires.
+  group: Composés Bioactifs
+
+NAG:
+  short: NAG
+  long: N-Acétyl Glucosamine
+  description: Dérivé de la glucosamine impliqué dans l'hydratation et la régulation de la pigmentation.
+  group: Composés Bioactifs
+
+GluL:
+  short: GluL
+  long: Gluconolactone
+  description: Polyhydroxyacide doux aux propriétés exfoliantes et antioxydantes.
+  group: Composés Bioactifs
+
+Beta-G:
+  short: Beta-G
+  long: Bêta-Glucane
+  description: Polysaccharide apaisant et réparateur d'origine fongique ou végétale.
+  group: Composés Bioactifs
+
+GOS:
+  short: GOS
+  long: Galacto-Oligosaccharides
+  description: Prébiotiques favorisant le microbiome cutané.
+  group: Composés Bioactifs
+
+BF:
+  short: BF
+  long: Ferment de Bacillus
+  description: Enzyme produite par fermentation, souvent utilisée pour ses propriétés enzymatiques douces.
+  group: Composés Bioactifs
+
+RR Ferment:
+  short: RR Ferment
+  long: Ferment de racine de radis (Leuconostoc)
+  description: Conservateur naturel aux propriétés antimicrobiennes, issu de la fermentation du radis.
+  group: Composés Bioactifs
+
+GGe:
+  short: GGe
+  long: Extrait de racine de réglisse (Glycyrrhiza glabra)
+  description: Actif éclaircissant et apaisant riche en glabridine.
+  group: Composés Bioactifs
+
+Concombre:
+  short: Concombre
+  long: Extrait de concombre (Cucumis sativus)
+  description: Extrait hydratant et rafraîchissant, riche en vitamines.
+  group: Composés Bioactifs
+
+Rose water:
+  short: Rose water
+  long: Eau de fleur de rose (Rosa damascena)
+  description: Eau florale aux propriétés adoucissantes et légèrement astringentes.
+  group: Composés Bioactifs
+
+PD:
+  short: PD
+  long: Propanédiol
+  description: Solvant et humectant issu de sources végétales.
+  group: Composés Bioactifs
+
+PG:
+  short: PG
+  long: Glycol de pentylène
+  description: Humectant et agent de texture.
+  group: Composés Bioactifs
+
+Camomille:
+  short: Camomille
+  long: Eau de fleur de camomille (Anthemis nobilis)
+  description: Eau florale apaisante et anti-inflammatoire.
+  group: Composés Bioactifs
+
+Sel marin:
+  short: Sel marin
+  long: Sel de mer (Maris Sal)
+  description: Agent reminéralisant et exfoliant doux.
+  group: Composés Bioactifs
+
+Chèvrefeuille C:
+  short: Chèvrefeuille C
+  long: Extrait de fleur de chèvrefeuille (Lonicera caprifolium)
+  description: Utilisé comme conservateur naturel.
+  group: Composés Bioactifs
+
+Chèvrefeuille J:
+  short: Chèvrefeuille J
+  long: Extrait de fleur de chèvrefeuille (Lonicera japonica)
+  description: Agent antimicrobien naturel, souvent combiné à d'autres extraits floraux.
+  group: Composés Bioactifs
+
+CA:
+  short: CA
+  long: Acide citrique
+  description: Acide alpha-hydroxylé utilisé pour ajuster le pH et exfolier.
+  group: Composés Bioactifs
+
+SB:
+  short: SB
+  long: Benzoate de sodium
+  description: Conservateur synthétique à faible toxicité.
+  group: Composés Bioactifs
+
+PS:
+  short: PS
+  long: Sorbate de potassium
+  description: Conservateur antifongique utilisé à faible dose.
+  group: Composés Bioactifs
+
+SiO2:
+  short: SiO2
+  long: Silice
+  description: Agent absorbant et matifiant.
+  group: Composés Bioactifs
+
+TGDA:
+  short: TGDA
+  long: Diacétate de glutamate de tétrasodium
+  description: Chélateur stabilisant les formules aqueuses.
+  group: Composés Bioactifs
+
+Linalol:
+  short: Linalol
+  description: Composé parfumant naturellement présent dans de nombreuses huiles essentielles.
+  group: Composés Bioactifs
+
+Citronellol:
+  short: Citronellol
+  description: Molécule odorante au parfum floral, parfois allergène.
+  group: Composés Bioactifs
+
+Geraniol:
+  short: Geraniol
+  long: Géraniol
+  description: Composé aromatique présent dans l'huile de géranium, à la fois parfumant et potentiellement sensibilisant.
+  group: Composés Bioactifs
+
+thermolyse:
+  short: thermolyse
+  description: Modalités d'élimination vers le milieu extérieur, de l'énergie thermique produite en excès par l'organisme
+  group: Définitions
+
+exposome:
+  short: exposome
+  description: Ensemble des expositions environnementales qui agissent sur un individu tout au long de sa vie, et influencent notamment le vieillissement cutané.
+  group: Définitions
+
+dysbiose:
+  short: dysbiose
+  description: Déséquilibre qualitatif ou quantitatif du microbiote, pouvant altérer les fonctions barrières ou immunitaires de la peau.
+  group: Définitions
