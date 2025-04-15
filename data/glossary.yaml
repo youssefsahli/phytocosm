@@ -1,8 +1,22 @@
+ADN:
+  short: ADN
+  long: acide désoxyribonucléique
+
+AGE:
+  short: AGE
+  shortplural: AGEs
+  long: produit de glycation avancée
+  longplural: produits de glycation avancée
+
 CPA:
   short: CPA
   long: cellule présentatrice d'antigène
   longplural: cellules présentatrices d'antigène
 
+EDC:
+  short: EDC
+  long: endocrine-disrupting chemicals
+  
 IL-1:
   short: IL-1
   long: interleukine-1
@@ -18,6 +32,7 @@ TNF-α:
 MMP:
   short: MMP
   long: métalloprotéinase matricielle
+  longplural: métalloprotéinases matricielles
 
 TLR:
   short: TLR

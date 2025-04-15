@@ -1,6 +1,4 @@
 #import "/template.typ": desc
-#import "@preview/glossy:0.8.0": *
-#show: init-glossary.with(yaml("/data/glossary.yaml"))
 
 == Géneralités <general>
 
@@ -18,7 +16,6 @@ La peau est aussi le plus grand appareil sensoriel du corps, et contribue à l'h
   #figure(
     caption: [_Lame d'une coupe d'épiderme et de derme colorée à l'hématoxyline et éosine_],
     pad(
-      rest: 32pt, 
       rect(
         image(
           "/img/Normal_Epidermis_and_Dermis_with_Intradermal_Nevus_10x.jpg",

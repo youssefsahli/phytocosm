@@ -1,6 +1,6 @@
 #import "/template.typ": chapter
-= Le système tégumentaire
 
+= Le système tégumentaire
 #chapter("/chapters/peau/general.typ", pb: false)
 #chapter("/chapters/peau/structure.typ")
 #chapter("chapters/peau/exposomes.typ")

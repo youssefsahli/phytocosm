@@ -1,5 +1,8 @@
-#import "/template.typ": title, project, subtitle, desc
+#import "/template.typ": title, project, subtitle, desc, section, chapter
 #show: project
+
+#import "@preview/glossy:0.8.0": *
+#show: init-glossary.with(yaml("/data/glossary.yaml"))
 
 #title[
     Intérêt de certains principes actifs végétaux en dermo-cosmétologie
@@ -8,22 +11,16 @@
     // #image("./img/cover.png", width: 60%, alt: "cover image")
 ]
 
-#show outline.entry.where(
-  level: 1
-): set block(above: 2em)
-
-#show outline.entry: it => {
-  link(
-    it.element.location(),
-    it.indented(it.prefix(), it.inner())
-  )
-}
-#outline(title: text(size: 14pt, upper[Table des matières]))
+#outline(title: [Table des matières])
 #pagebreak(weak:true)
 
 
 #include "data/glossary.typ"
 
-#include "./chapters/peau/peau.typ"
+#section("chapters/history/history.typ")
+#section("chapters/peau/peau.typ")
+#section("chapters/bioactifs/bioactifs.typ")
+
+
 
 #pagebreak(weak: true)

@@ -2,7 +2,9 @@
 #import "@preview/frame-it:1.1.2": *
 #import "@preview/showybox:2.0.4": showybox
 
-#import "/template.typ": sepia-bg , sepia
+#import "/template.typ": sepia-bg , sepia, mono-font, body-font
+
+#set page(header: [],)
 
 #let (example, feature, variant, syntax) = frames(
   feature: ("Feature",),
@@ -14,7 +16,7 @@
   syntax: ("Syntax",),
 )
 #show: frame-style(styles.boxy)
-#show: init-glossary.with(yaml("glossary.yaml"))
+#show: init-glossary.with(yaml("glossary.yaml"),)
 
 #let capitalize(word) = {
   return upper(word.first()) + word.slice(1)
@@ -27,11 +29,13 @@
   //   body: Content containing all groups and entries
   section: (title, body) => {
     // align(center, pad(x: 100%, y: 2pt, upper(title)))
-    align(center)[
+    set text(font: body-font)
+    align(center, text(size: 12pt)[
       #upper(title)
-    ]
+    ])
     v(10pt)
-    body
+    set text(size: 9pt, font: "Cascadia Mono")
+    columns(2, body)
   },
 
   // Renders a group of related glossary terms
@@ -43,18 +47,15 @@
   group: (name, index, total, body) => {
     if name != "" and total > 1 {
       v(1em)
-      
+      align(center, line(length: 80%))
       align(center, 
-        rect(
-          stroke: none,
-        text(size: 1.1em, tracking: 2pt, weight: "bold", fill: gray.darken(80%))[
-         #name
+        text(font: body-font,size: 1.4em, tracking: 1.5pt, weight: "bold", fill: gray.darken(80%))[
+         #(name)
         ]
       )
       // align(center, line(length: 40%, stroke: sepia.transparentize(80%)))
-    )
     }
-    v(0.4em)
+    v(1em)
     body
   },
 
@@ -71,7 +72,7 @@
   entry: (entry, index, total) => {
     // Format term components with minimal spacing
     let term = text(
-      weight: "medium",
+      weight: 350,
       fill: gray.darken(60%),
       capitalize(entry.short)
     )
@@ -79,13 +80,13 @@
     let long-form = if entry.long == none {
       []
     } else {
-      text(fill: gray.darken(20%), [ \u{25B8} #entry.long])
+      text(fill: gray.darken(60%), weight: "thin", [ · #entry.long])
     }
 
     let description = if entry.description == none {
       []
     } else {
-      text(style: "italic", )[· #entry.description]
+      text(weight: "extralight", size: 7pt)[· #entry.description]
     }
 
     // Create the complete entry with tight spacing
@@ -96,7 +97,7 @@
         align: left+bottom,
         gutter: 0.5em,
         // Term and description column
-        box[#term#entry.label#long-form #description],
+        box[#text(weight: "light")[#term]#entry.label#long-form #description],
         // Dots....
         // repeat(h(0.25em) + text(fill: gray, ".") + h(0.25em)),
         h(1em),
@@ -104,7 +105,10 @@
         text(
           size: 0.8em,
           fill: gray.darken(20%),
-          entry.pages
+           {
+             show regex("󰖂\\s*"): t => []
+             entry.pages
+          }
         )
       )
     )

@@ -3,15 +3,18 @@
 #import "/boxes.typ"
 #import "@preview/use-tabler-icons:0.8.0": *
 
-#let body-font-size = 14pt
+#let body-font-size = 13pt
 #let title-font-size = 2em
 #let subtitle-font-size = 0.6em
+#let hsubtitle-font-size = 1.1em
 #let small-font-size = 0.8em
 #let italic-font-size = 1.1em
+#let header-font-size = .9em // there is a hard-coded 1.4 / 1.2 factor
 
 #let mono-font = "New Computer Modern"
 #let serif-font = "ETBembo"
 #let italic-font = "Adobe Garamond Pro"
+#let hsubtitle-font = "Cochin"
 
 
 #let body-font = serif-font
@@ -22,12 +25,43 @@
 #let sepia = rgb("#704214")
 #let sepia-bg = sepia.transparentize(90%)
 
-#let figure-spacing = 1em
+#let figure-spacing = 0.5em
+
+#let annexes = state("Annexes", ()) // we store annexes here so we can list them at the end.
+#let anx-idx = state("Index des Annexes", 1) // to add labels to annexes and try to link them in place
 
 #let chapter(p, pb: true) = [
   #if pb [#pagebreak(weak: true)]
   #include(p)
 ]
+
+#let section(p) = {
+  include(p)
+  pagebreak(weak: true)
+}
+
+#let desc(t) = {
+    line(length: 100%, stroke: (
+      thickness: 1pt,
+      cap: "round"
+    ))
+    emph[#t]
+  } 
+
+#let hdesc(t) = {
+    rect(
+      fill: sepia-bg.transparentize(80%),
+      stroke: none,
+      radius: 15pt,
+      inset: 15pt,
+      text(
+        font: mono-font,
+        size: small-font-size,
+        style: "normal",
+        t
+      )
+    )
+  } 
 
 #let small(content) = {
     text(size: small-font-size)[#content]
@@ -61,18 +95,47 @@
     #t
 ])
 
-#let desc(t) = {
-    line(length: 100%)
-    emph[#t]
-  } 
+// Header subtitle
+#let hsubtitle(t) = {
+  box(width: 100%, text(
+      size: hsubtitle-font-size,
+      font: hsubtitle-font,
+      style: "normal",
+      
+      align(left, "         " + t) //ugly but works
+    ))
+  }
+
+#let annexe(content) = context {
+  annexes.update(arr => {
+    arr.push(content)
+    arr
+  })
+
+  anx-idx.update(i => {i+1})
+  let label-name = "anx-"+ str(anx-idx.get())
+  link(label(label-name))[_cf annexe #str(anx-idx.get())_]
+}
+
+#let show_annexes() = context {
+  set heading(numbering: "I.")
+  set page(header: [])
+  let count = 1
+  let a = annexes.final()
+  for acontent in a {
+    align(center + top)[
+      #grid(columns: (1fr, 1fr, 1fr),
+      line(length: 100%),
+      [#upper[Annexe] #numbering("I", count)],
+      line(length: 100%),
+    )]
+    [#acontent #label("anx-"+ str(count))]
+    pagebreak(weak: true)
+    
+  }
+}
 
 #let project(body) = {
-
-    show outline: body => {
-        set text(size: body-font-size)
-        set align(center)
-        body
-    }
 
     show table.cell: it => {
         set text(size: small-font-size)
@@ -81,7 +144,12 @@
         } else { it }
     }
 
+    set figure(
+      placement: auto,
+    )
+
     show heading: it => {
+        set text(size: header-font-size)
         context {
             if it.level > 1 {
                 it
@@ -90,7 +158,7 @@
                 it
             }
         }
-        v(0.5em)
+         v(0.5em)
     }
 
     show list: it => {
@@ -126,6 +194,18 @@
 
     set footnote(numbering: "①")
     set footnote.entry(separator: none)
+
+    show outline: it => {
+      show heading: t => {
+        align(center, text(size: body-font-size, upper(t)))
+      }
+      show outline.entry: e => {
+        set text(9pt, font: "Cascadia Mono", style: "normal", weight: "thin")
+        show regex("󰖂\\s*"): t => []
+        e
+      }
+      it
+    }
 
     set super(typographic: false)
 
@@ -226,8 +306,28 @@
     
     body
 
+    show_annexes()
+    
     pagebreak(weak:true)
-    set page(header: [])
-    bibliography("zotero.bib", style: "vancouver-superscript") 
+    set page(
+      header: [],
+      columns: 2,
+    )
+    set text(0.5em)
+    show bibliography: it => {
+      show heading: t => {
+        set text(size: 14pt)
+        t
+        v(4pt)
+      }
+      it
+    } 
+    bibliography(
+      "zotero.bib", 
+      title: [
+        Bibliographie
+      ],
+      style: "vancouver-superscript"
+    ) 
 }
 
