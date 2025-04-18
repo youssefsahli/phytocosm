@@ -20,7 +20,9 @@
 #section("chapters/history/history.typ")
 #section("chapters/peau/peau.typ")
 #section("chapters/bioactifs/bioactifs.typ")
-
+#section("chapters/formulations/formulations.typ")
+#section("chapters/galénique/galenic.typ")
+#section("chapters/ecology/ecology.typ")
 
 
 #pagebreak(weak: true)

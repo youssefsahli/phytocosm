@@ -1,25 +1,180 @@
-Category,Brand,Short Name,Popularity Score
-Facial Cleansers,Paula's Choice,Gommage Visage Avec Acide Salicylique,98
-Facial Cleansers,L'Oréal Paris,Lotion Peeling Visage Lissante Et Exfoliante,96
-Facial Cleansers,L'Oréal Men,Gel Désincrustant Anti,94
-Facial Creams,Erborian,Cc Crème À La Centella Asiatica,98
-Facial Creams,Biodance Bio-Collagen,Collagen Real Deep Mask Pack De 4,96
-Facial Creams,Lotus Coton-Tiges,Tiges En Papier Et Coton Bio,94
-Hair Masks,Revlon Professional,"Revlon Professional Uniqone, Masque Cheveux En Spray 10...",98
-Hair Masks,KÉRASTASE Nutritive,Masque Nourrissant,96
-Hair Masks,Kerargan,Masque Capillaire Ultra Réparateur À La Kératine Pour...,94
-Hair Oils,L'Oréal Paris,Elseve Huile Extraordinaire,98
-Hair Oils,Dessange,Huile Sublime Nutri,96
-Hair Oils,Bionoble Huile,"100% Pure, Naturelle Et Pressée À Froid",94
-Makeup,Maybelline New-York,York,98
-Makeup,Erborian,Cc Crème À La Centella Asiatica,96
-Makeup,Essence,Mascara I Love Extreme Volume Crazy,94
-Serums,Mixa,Sérum Booster D'Hydratation Hyalurogel,98
-Serums,Mixa Intensif,La Crème Des Peaux Très Sèches Et Ternes,96
-Serums,L'Oréal Men,Soin Hydratant Anti,94
-Shampoos,LUXEOL,Shampooing Pousse Cheveux,98
-Shampoos,Batiste Shampooing,"Batiste Shampooing Sec, Nude, Rafraichit Les Cheveux Et...",96
-Shampoos,LUXÉOL,Shampoing Épaississant,94
-Sunscreens,Garnier Ambre,Sérum Autobronzant Visage Hydratant,98
-Sunscreens,Oenobiol Perfect,Efficace Dès Le 1Er Mois Sans Soleil,96
-Sunscreens,Autobronzant Gélules,Efficacité Prouvée Dès 1 Mois,94
+Rang,Nom,Marque,Catégorie,Phytocomposants,Total
+1,LUXEOL Shampooing Pousse Cheveux,‎Luxéol,Shampoings,Acacia Concinna Fruit Extract · Balanites Aegyptiaca Fruit Extract · Gypsophila Paniculata Root Extract,3
+2,Batiste Shampooing Sec Nude,‎Batiste,Shampoings,Oryza sativa,1
+3,SKALA EXPERT Mais CACHOS,‎SKALA,Shampoings,Ricinus Communis Seed Oil · Argania Spinosa Kernel Oil,2
+4,LUXÉOL Shampoing Épaississant,‎Luxéol,Shampoings,Palmaria Palmata Extract,1
+6,Neutrogena T/Gel Fort Shampoing,‎Neutrogena,Shampoings,,0
+11,LUXÉOL Shampooing Antichute,‎Luxéol,Shampoings,Citronellol · Geraniol · Linalool,3
+12,GARNIER FRUCTIS Méthode Boucles,‎Garnier,Shampoings,Helianthus annuus seed oil · Butyrospermum parkii butter,2
+13,Garnier Ultra Doux Masque Lissant Douceur & Brillance,‎Garnier,Shampoings,Helianthus annuus seed oil · Butyrospermum parkii butter,2
+16,Shampoing Coco & Beurre de Karité BIO,‎Energie Fruit,Shampoings,Cocos nucifera oil,1
+17,L'Oréal Paris Elseve Color-Vive Shampooing Violet 200 ml,‎L’Oréal Paris,Shampoings,Iris Florentina Root Extract,1
+18,Naturé Moi Shampooing Nourrissant,‎Naturé moi,Shampoings,Sesamum indicum seed oil · Prunus armeniaca fruit extract,2
+19,Batiste Shampooing Sec Sensible,‎Batiste,Shampoings,Oryza Sativa Starch · Aloe Barbadensis Leaf Extract,2
+21,Ultra Doux,‎Garnier,Shampoings,Helianthus annuus seed oil · Rosmarinus officinalis leaf extract · Persea gratissima oil · Butyrospermum parkii butter,4
+23,LUXEOL Conditionneur Croissance Sans Rinçage,‎Luxéol,Shampoings,Ricinus Communis Seed Oil · Phyllanthus Emblica Fruit Extract · Panax Ginseng Root Extract,3
+25,Garnier Ultra Doux Shampooing Charbon & Nigelle,‎Garnier,Shampoings,Nigella sativa seed oil,1
+27,L’Oréal Professionnel Metal Detox,‎L'Oréal Professionnel Paris,Shampoings,,0
+28,Saugella Crème Douceur,‎Saugella,Shampoings,Calendula officinalis Flower Extract · Prunus armeniaca Kernel Oil · Lythrum salicaria Extract · Helichrysum italicum Extract,4
+29,Garnier Ultra Doux Masque Cheveux Secs Avocat Karité 340ml,‎Garnier,Shampoings,Helianthus annuus seed oil · Rosmarinus officinalis leaf extract · Persea gratissima oil · Butyrospermum parkii butter,4
+30,Ultra Doux Après-Shampooing,‎Garnier,Shampoings,Helianthus annuus seed oil · Rosmarinus officinalis leaf extract · Persea gratissima oil · Butyrospermum parkii butter,4
+1,Garnier Pure Active Gel Nettoyant Charbon,‎Garnier,Gels Démaquillants,Vaccinium Myrtillus Fruit Extract,1
+6,BOat Cleansing Balm,‎The INKEY List,Gels Démaquillants,Prunus Amygdalus Dulcis · Avena Sativa Kernel Oil · Avena Sativa Kernel Flour · Helianthus Annuus Seed Oil,4
+9,LE PETIT OLIVIER Gelée Micellaire Démaquillante,‎Le Petit Olivier,Gels Démaquillants,Camellia sinensis leaf water · Aloe barbadensis leaf juice powder,2
+10,Tattoo Gel Lavant,‎BepanthenDerma,Gels Démaquillants,Argania Spinosa Kernel Oil,1
+11,L'Oréal Men Expert Gel Moussant Purifiant Anti-Imperfections,‎L'Oréal Men Expert,Gels Démaquillants,,0
+12,Lumineo Gel nettoyant pour le visage,‎Lumineo,Gels Démaquillants,Leontopodium Alpinum Flower/Leaf Extract · Rhodiola Rosea Extract · Porphyra Umbilicalis Extract · Schisandra Chinensis Fruit Extract · Oryza Sativa Extract · Nannochloropsis Oculata Extract · Silybum Marianum Seed Oil,7
+13,WELEDA Gel nettoyant rafraîchissant,‎WELEDA,Gels Démaquillants,Aloe barbadensis leaf juice · Hamamelis virginiana water,2
+14,Gel Nettoyant au Charbon,‎Biore,Gels Démaquillants,Cocamidopropyl betaine,1
+15,KIKO Milano Pure Clean Micellar Gel,‎KIKO Milano,Gels Démaquillants,Betula alba juice · Houttuynia cordata extract · Paeonia officinalis flower extract · Punica granatum pericarp extract,4
+19,Saint-Gervais Mont Blanc Gel Purifiant Nettoyant,‎Saint-Gervais Mont Blanc,Gels Démaquillants,Epilobium fleischeri flower/leaf/stem extract,1
+21,Bioderma Sensibio Gel Moussant,‎Bioderma,Gels Démaquillants,,0
+22,Neutrogena Hydro Boost Aqua-Gel Nettoyant Visage,‎Neutrogena,Gels Démaquillants,,0
+23,Gel Nettoyant Moussant Yonka 200ml,‎Yonka,Gels Démaquillants,Iris florentina root extract · Asparagopsis armata extract · Lavandula angustifolia oil · Litsea cubeba fruit oil · Pelargonium graveolens leaf oil,5
+26,Garnier Bio Gel Lemongrass,‎Garnier,Gels Démaquillants,Butyrospermum parkii butter · Aloe barbadensis leaf juice powder · Centaurea cyanus flower water · Argania spinosa kernel oil · Helianthus annuus seed oil,5
+27,Neutrogena Curcuma Clear Nettoyant Visage,‎Neutrogena,Gels Démaquillants,Curcuma Longa Extract,1
+29,Neutrogena Hydro Boost Aqua Gel,‎Neutrogena,Gels Démaquillants,Coconut Acid,1
+30,ISISPHARMA SENSYLIA Gelée,‎ISISPHARMA,Gels Démaquillants,Imperata cylindrica root extract,1
+1,Mixa Lait Démaquillant 200ml,‎Mixa,Mousses Démaquillantes,Rosa gallica flower extract,1
+3,RoC Démaquillant au Lait 3 en 1,‎RoC,Mousses Démaquillantes,,0
+5,Cattier Lait Démaquillant Bio,‎CATTIER,Mousses Démaquillantes,Centaurea Cyanus Flower Water · Helianthus Annuus Hybrid Oil,2
+6,WELEDA Lait nettoyant Confort Amande,‎Weleda,Mousses Démaquillantes,Prunus Amygdalus Dulcis Oil · Prunus Domestica Seed Oil,2
+9,PIN UP SECRET Secret Demaquillant,‎PINUP SECRET,Mousses Démaquillantes,Rosa Damascena Flower Water · Hamamelis Virginiana Leaf Water · Commiphora Myrrha Oil,3
+13,Diadermine Lait Démaquillant,‎Diadermine,Mousses Démaquillantes,,0
+15,So'Bio étic Lait démaquillant soyeux,‎So'Bio étic,Mousses Démaquillantes,,0
+17,Lait Démaquillant Lift’Argan,‎Natessance,Mousses Démaquillantes,Aloe Barbadensis Leaf Juice · Argania Spinosa Kernel Oil · Centaurea Cyanus Flower Water,3
+22,So'Bio étic Mon Lait d'Ânesse Lait Démaquillant Soyeux,‎So'Bio étic,Mousses Démaquillantes,Helianthus Annuus Seed Oil · Olus Oil · Butyrospermum Parkii Butter · Aloe Barbadensis Leaf Juice Powder,4
+23,BORN TO BIO Lait Démaquillant Confort Bleuet Guimauve Bio,‎BORN TO BIO,Mousses Démaquillantes,Hordeum Vulgare Stem Water · Helianthus Annuus Seed Oil · Centaurea Cyanus Flower Water · Acacia Senegal Gum · Althaea Officinalis Root Extract,5
+27,Lierac Le Lait Démaquillant 200ml,‎LIERAC,Mousses Démaquillantes,Maris Aqua · Helianthus Annuus Seed Oil · Laminaria Digitata Extract · Chlorella Vulgaris Extract,4
+2,NIVEA Démaquillant Yeux Double Action au Bleuet,‎NIVEA,Eaux Micellaires,Centaurea Cyanus Flower Extract · Helianthus Annuus Seed Oil,2
+3,Nivea MicellAIR Eau Micellaire Peaux Sensibles,‎NIVEA,Eaux Micellaires,Vitis Vinifera Seed Oil,1
+4,La Provençale Bio Micellaire Anti-Age,‎La Provençale,Eaux Micellaires,Hordeum vulgare stem water · Olea europaea leaf extract,2
+6,Maybelline Cils Demasq,‎Maybelline New York,Eaux Micellaires,,0
+7,Mixa Démaquillant Yeux,‎Mixa,Eaux Micellaires,,0
+8,Eau Précieuse Eau Micellaire Clearskin,‎Eau Précieuse,Eaux Micellaires,,0
+9,GARNIER Skin Active Solution Micellaire Tout En 1,‎Garnier,Eaux Micellaires,Rosa damascena flower water,1
+11,Maybelline Cils Demasq,‎Maybelline New York,Eaux Micellaires,,0
+12,Mixa BIO Eau Nettoyante Démaquillante,‎Mixa,Eaux Micellaires,Aloe barbadensis leaf juice,1
+16,La Provençale L'Eau Micellaire Pureté,‎La Provençale,Eaux Micellaires,Hordeum vulgare stem water · Centaurea cyanus flower water · Olea europaea leaf extract,3
+17,OUATE Mon Nettoyant Douceur,‎OUATE,Eaux Micellaires,,0
+18,LE PETIT OLIVIER Eau Micellaire,‎Le Petit Olivier,Eaux Micellaires,Olea europaea fruit extract,1
+20,Cattier Solution Micellaire Démaquillante Perle d'Eau Bio,‎CATTIER,Eaux Micellaires,Citrus Aurantium Amara Flower Water · Rosa Damascena Flower Water · Aloe Barbadensis Leaf Extract,3
+21,Hydrolat de Romarin BIO,‎MY COSMETIK,Eaux Micellaires,Rosmarinus officinalis,1
+23,Eau Micellaire Thermale,‎Saint-Gervais Mont Blanc,Eaux Micellaires,,0
+24,Neutrogena Eau Micellaire Triple Action Hydro Boost,‎Neutrogena,Eaux Micellaires,,0
+25,Eau micellaire douceur,‎Eau Thermale Jonzac,Eaux Micellaires,,0
+26,Sebium H2O,‎bioderma,Eaux Micellaires,Ginkgo Biloba Leaf Extract,1
+27,La Drôme Provençale Eau Florale de Bleuet 200 ml,‎La Drôme Provençale,Eaux Micellaires,Centaurea cyanus flower water,1
+28,SVR Eau Micellaire Sebiaclear,‎SVR,Eaux Micellaires,,0
+30,KIKO Milano Pure Clean Micellar Biphase Water,‎KIKO Milano,Eaux Micellaires,Prunus Amygdalus Dulcis Oil · Saccharomyces/Xylinum/Black Tea Ferment · Punica Granatum Seed Oil · Camellia Japonica Seed Oil · Helianthus Annuus Seed Oil · Melia Azadirachta Leaf Extract · Leuconostoc/Radish Root Ferment Filtrate · Melia Azadirachta Flower Extract · Coccinia Indica Fruit Extract · Solanum Melongena Fruit Extract · Aloe Barbadensis Flower Extract · Simmondsia Chinensis Seed Oil · Punica Granatum Pericarp Extract · Daucus Carota Sativa Root Extract · Ocimum Sanctum Leaf Extract · Corallina Officinalis Extract · Curcuma Longa Root Extract,17
+3,SheaMoisture Masque Capillaire Intensive Hydration,‎SHEA MOISTURE,Masques Cheveux,Cocos Nucifera Oil · Butyrospermum Parkii Butter · Mangifera Indica · Trichilia Emetica Seed Butter · Adansonia Digitata Seed Oil · Persea Gratissima Oil · Ficus Carica Extract,7
+5,Kerargan,‎KERARGAN,Masques Cheveux,Aloe Barbadensis Leaf Juice Powder · Argania Spinosa Kernel Oil,2
+7,Karseell Collagen Masque Cheveux,‎Karseell,Masques Cheveux,Cocos Nucifera Oil · Argania Spinosa Kernel Oil · Persea Gratissima Oil · Butyrospermum Parkii · Achillea Millefolium Extract · Arnica Montana Flower Extract · Artemisia Absinthium Extract · Calendula Officinalis Flower Extract · Chamomilla Recutita Extract · Gentiana Lutea Root Extract · Moringa Pterygosperma Seed Extract,11
+8,JOHN FRIEDA Frizz Ease Masque Intensif Réparation Miracle,‎John Frieda,Masques Cheveux,Argania Spinosa Kernel Oil · Cocos Nucifera Oil · Moringa Oleifera Seed Oil,3
+9,SHEA MOISTURE Masque Fortifiant Huile de Ricin noir de Jamaïque,‎SHEA MOISTURE,Masques Cheveux,Cocos Nucifera Oil · Butyrospermum Parkii Butter · Persea Gratissima Oil · Mangifera Indica Seed Butter · Olea Europaea Husk Oil · Ricinus Communis Seed Oil · Mentha Piperita Leaf Extract · Mauritia Flexuosa Fruit Oil · Macadamia Ternifolia Seed Oil · Aloe Barbadensis Leaf Juice · Trifolium Pratense Flower Extract · Pyrus Malus Fruit Extract,12
+14,Natessance Masque Régénérant Ricin Kératine 200ml,‎Natessance,Masques Cheveux,Ricinus Communis Seed Oil · Cocos Nucifera Oil · Butyrospermum Parkii Butter · Macadamia Ternifolia Seed Oil · Helianthus Annuus Seed Oil,5
+17,Karseell Violet Masque Cheveux Neutralise Les Reflets Jaunes,‎Karseell,Masques Cheveux,,0
+18,L'Oréal Paris Masque Violet Déjaunisseur Intense,‎L’Oréal Paris,Masques Cheveux,Cocos Nucifera Oil,1
+21,Karseell Collagen Masque Cheveux,‎Karseell,Masques Cheveux,Cocos Nucifera Oil · Argania Spinosa Kernel Oil · Persea Gratissima Oil · Butyrospermum Parkii · Achillea Millefolium Extract · Arnica Montana Flower Extract · Artemisia Absinthium Extract · Calendula Officinalis Flower Extract · Chamomilla Recutita Extract · Gentiana Lutea Root Extract · Moringa Pterygosperma Seed Extract,11
+22,LOVEA Hair Food Monoï & Karité,‎Lovea,Masques Cheveux,Cocos Nucifera Oil · Butyrospermum Parkii Butter Extract · Gardenia Taitensis Flower Extract · Glycine Soja Oil,4
+23,Fino Premium Touch Masque,‎FMHOME,Masques Cheveux,Argania spinosa kernel oil · Vitis vinifera seed oil,2
+27,Revlon Professional Orofluido Original,‎REVLON PROFESSIONAL,Masques Cheveux,Argania Spinosa Kernel Oil · Astrocaryum Murumuru Seed Butter,2
+29,Masque Capillaire Collagène Réparation Hydratation Cheveux,‎Karseell MACA CARE SYSTEM,Masques Cheveux,Argania Spinosa Kernel Oil · Persea Gratissima Oil · Butyrospermum Parkii · Achillea Millefolium ·  · ·  · ·  · ·  · ·  ·,9
+1,L'Oréal Paris Elseve Huile Extraordinaire,‎L’Oréal Paris,Huiles Cheveux,Chamomilla recutita extract · Cocos nucifera oil · Helianthus annuus seed oil · Nelumbium speciosum extract · Linum usitatissimum flower extract · Gardenia tahitensis flower extract · Rosa canina flower extract · Glycine soja oil,8
+2,Bionoble Huile de Ricin Bio 50ml,‎BIONOBLE,Huiles Cheveux,Ricinus Communis (Ricin) Seed Oil,1
+3,Huile Sublime Nutri-Régénérante Extreme,‎Dessange,Huiles Cheveux,Argania spinosa oil · Argania spinosa kernel oil · Camellia oleifera seed oil · Pentaclethra macroloba oil · Pentaclethra macroloba seed oil,5
+6,Huile de Ricin Bio,‎Biorganique,Huiles Cheveux,Ricinus communis seed oil,1
+7,Huile de Ricin Bio 50ml,‎BIONOBLE,Huiles Cheveux,Ricinus Communis (Ricin) Seed Oil,1
+10,ACTIVILONG BeNature Huile De Ricin 100% Pure,‎Activilong,Huiles Cheveux,Ricinus Communis (Castor) Seed Oil,1
+11,Huile de Ricin Orgaliane,‎Orgaliane,Huiles Cheveux,Ricinus communis seed oil,1
+12,Huile de Romarin Pour Cheveux & Peau,‎Nature Spell,Huiles Cheveux,Helianthus Annuus Seed Oil · Rosmarinus Officinalis Leaf Oil,2
+14,LUXÉOL Huile De Ricin,‎Luxéol,Huiles Cheveux,Ricinus Communis Seed Oil · Glycine Soja Oil,2
+15,Bionoble Huile d'Argan Bio,‎BIONOBLE,Huiles Cheveux,Argania Spinosa (Argan) Kernel Oil,1
+16,Huile de Ricin Bio 50ml,‎Beau Cliché,Huiles Cheveux,Ricinus communis seed oil,1
+17,ACTIVILONG Leave-in Acticurl,‎Activilong,Huiles Cheveux,Aloe Barbadensis Leaf Juice Powder · Butyrospermum Parkii Butter · Cocos Nucifera Oil · Helianthus Annuus Seed Oil · Hylocereus Undatus Fruit Extract · Olea Europaea Fruit Oil · Persea Gratissima Oil · Rosmarinus Officinalis Leaf Extract,8
+19,Huile de Nigelle Bio Pure 50ml,‎BIONOBLE,Huiles Cheveux,Nigella Sativa Seed Oil,1
+20,Garnier Ultra Doux Huile Merveilleuse,‎Garnier,Huiles Cheveux,Argania spinosa kernel oil · Camellia oleifera seed oil,2
+25,Mielle Huile Romarin Menthe,‎Mielle Organics,Huiles Cheveux,"huile de graines de Ricinus Communis · ""extrait de feuille daloe barbadenis"" · huile de graines de carthamus tinctorius · huile de noix de cocos · ""huile de feuille deucalyptus globulus"" · huile de Lavandula Angustifolia · huile de feuille de Melaleuca Altermifolia · huile de Mentha Piperita · ""extrait de feuille dOcimum"" · ""huile de son dOryza sativa"" · huile de feuille de Pogostemon Cablin · huile de Prunus Amygdalus Dulcis · huile de feuille de Rosmarinus Officinalis · huile de salvia scarea · huile de graines de Simmondsia Chinensis · huile de germe de Triticum Vulgare · huile de graines de vitis vinifera",17
+27,Huile Pousse Cheveux Très Rapide,‎Lxitian,Huiles Cheveux,Rosmarinus officinalis leaf oil · Prunus amygdalus dulcis oil · Adansonia digitata seed oil · Lavandula angustifolia oil · Olea europaea fruit oil · Coffea arabica seed oil · Cocos nucifera oil · Petroselinum crispum seed oil · Persea gratissima oil · Argania spinosa kernel oil · Ricinus communis seed oil · Panax ginseng root extract · Polygonum multiflorum root extract · Elaeis oleifera kernel oil · Zingiber officinale root extract,15
+28,Activilong Glycérine Végétale,‎Activilong,Huiles Cheveux,,0
+29,Sebastian Professional Dark Oil,‎Sebastian,Huiles Cheveux,Argania Spinosa Kernel Oil,1
+1,Garnier Ambre Solaire Sérum Autobronzant Visage 30 ml,‎Garnier,Protection Solaire,Cocos nucifera fruit juice · Aloe barbadensis leaf juice,2
+2,Oenobiol Perfect Bronze Autobronzant,‎Oenobiol,Protection Solaire,Solanum Lycopersicum extract · Haemaococcus pluvialis extract · Curcuma longa root extract,3
+3,Autobronzant Gélules Vitavea,‎Vitavea,Protection Solaire,Daucus carota powder · Citrus sinensis extract · Tagetes erecta extract,3
+5,Vitavea Bronzage Expert,‎VITAVEA BIEN-ETRE,Protection Solaire,Borago officinalis · Saccharomyces cerevisiae · Solanum lycopersicum,3
+6,Ambre Solaire Sensitive Expert+,‎AMBRE SOLAIRE,Protection Solaire,Aloe barbadensis leaf juice,1
+7,Gel à L’Aloe Vera PraNaturals,‎PraNaturals,Protection Solaire,Aloe vera,1
+8,SUN Fluide UV visage Luminous 630 FPS 50+,‎NIVEA,Protection Solaire,Glycyrrhiza Inflata Root Extract,1
+10,Préparateur Solaire & Accélérateur de Bronzage - Vitavea,‎Vitavea,Protection Solaire,Borago officinalis · Saccharomyces cerevisiae · Solanum lycopersicum,3
+11,Ciel d'Azur Labs Gel d'Aloé Vera Bio Pur Aloé,‎Pur Aloé,Protection Solaire,Aloe Barbadensis Leaf Extract,1
+13,Oenobiol Perfect Bronze Solaire,‎Oenobiol,Protection Solaire,Lycopersicon esculentum fruit extract · Haematococcus pluvialis extract · Curcuma longa rhizome extract · Tagetes erecta extract,4
+15,Gel Aloe Vera Bio,‎B.O.T cosmetic & wellness,Protection Solaire,Chondrus Crispus,1
+18,LOVEA - Stick Solaire FPS 50 - Haute Protection Visage & Zones Sensibles - Monoï De Tahiti - Protection UVA/UVB - Fini Invisible & Résistant À L'Eau - Vegan - Fabriqué En France - 40 g,‎Lovea,Protection Solaire,Helianthus Annuus Seed Cera · Candelilla Cera · Zea Mays Starch · Cocos Nucifera Oil · Gardenia Taitensis Flower Extract · Helianthus Annuus Seed Oil,6
+20,Baume Réparateur Après-Soleil,‎Corine de Farme,Protection Solaire,Butyrospermum Parkii Butter · Mangifera Indica Seed Butter · Cocos Nucifera Oil · Gardenia Taitensis Flower Extract · Helianthus Annuus Seed Oil,5
+22,Gel Aloe Vera Bio,‎B.O.T cosmetic & wellness,Protection Solaire,,0
+23,ParaSol Spray Protecteur,‎Parasol,Protection Solaire,Helianthus Annuus Seed Oil · Calendula Officinalis Flower Extract,2
+24,ParaSol Spray Graisse à Traire Monoï,‎Parasol,Protection Solaire,Cocos Nucifera Oil · Gardenia Tahitensis,2
+25,Corine de Farme Lait Protecteur SPF50+ Sensitive,‎Corine de Farme,Protection Solaire,Cocos Nucifera Oil · Gardenia Taitensis Flower Extract · Helianthus Annuus Seed Oil,3
+26,LOVEA Brume Solaire FPS 50 Monoï De Tahiti 150 ml,‎Lovea,Protection Solaire,Cocos nucifera (coconut) oil · Gardenia taitensis flower extract · Helianthus annuus (sunflower) seed oil,3
+27,SVR Eau Solaire SPF50+ Sun Secure,‎SVR,Protection Solaire,Bixa orellana seed extract · Glycine soja oil · Lepidium sativum sprout extract · Helianthus annuus seed oil,4
+30,Garnier Ambre Solaire Super UV Sérum Solaire Visage SPF50+,‎Garnier,Protection Solaire,Aloe barbadensis leaf juice,1
+1,Mixa Sérum Booster d'Hydratation Hyalurogel,‎Mixa,Sérums,,0
+2,Mixa Intensif Peaux Sèches,‎Mixa,Sérums,Theobroma cacao seed butter · Butyrospermum parkii butter,2
+4,L'Oréal Men Expert Soin Hydratant Anti-Fatigue 24H XXL,‎L'Oréal Men Expert,Sérums,,0
+6,L’Oréal Paris Revitalift Filler Sérum 30 ml,‎L'Oréal Paris,Sérums,Secale Cereale Seed Extract,1
+7,La Provençale Bio Crème Rose de Jouvence Anti-Âge Éclat,‎La Provençale,Sérums,Simmondsia Chinensis Seed Oil · Olea Europaea Fruit Oil · Olea Europaea Fruit Extract · Olea Europaea Leaf Extract · Argania Spinosa Kernel Oil · Aloe Barbadensis Leaf Juice Powder · Helianthus Annuus Seed Oil,7
+10,Topicrem CICA+ Crème Apaisante 40 ml,‎Topicrem,Sérums,Cera alba,1
+11,Sérum Concentré Anti-Imperfections,‎Mixa,Sérums,,0
+12,Revitalift Crème de Jour,‎L'Oréal Paris,Sérums,Butyrospermum Parkii Butter · Limnanthes Alba Seed Oil · Cera Alba · Glycine Soja Protein · Faex Extract,5
+13,BIO Sérum Visage à la Vitamine C/E,‎Florence,Sérums,Hamamelis Virginiana Extract · Centella Asiatica Extract · Tamarindus Indica Seed Polysaccharide · Citrus Aurantium Amara Oil · Taraxacum Officinale Extract · Citrus Aurantium Amara Flower Water · Citrus Aurantium Dulcis Peel Oil · Simmondsia Chinensis Seed Oil,8
+15,L’Oréal Paris Revitalift Filler Gel-Crème Repulpant 50 ml,‎L’Oréal Paris,Sérums,,0
+17,Mixa Crème Niacinamide Correction Éclat,‎Mixa,Sérums,Butyrospermum Parkii Butter · Zea Mays Starch,2
+18,Gel Aloe Vera Bio,‎B.O.T cosmetic & wellness,Sérums,Chondrus crispus,1
+19,Revitalift Laser X3,‎L'Oréal Paris,Sérums,Linalool · Isoeugenol · Limonene · Citronellol,4
+20,NIVEA MEN Soin Hydratant Peau Sensible,‎NIVEA,Sérums,Butyrospermum Parkii Butter · Hamamelis Virginiana Bark/Leaf Extract · Chamomilla Recutita Flower Extract,3
+21,Garnier Pure Active Sérum,‎Garnier,Sérums,,0
+22,Mixa Sérum Concentré Anti-Taches,‎Mixa,Sérums,,0
+23,COSRX Snail Mucin 96% Power Face Serum,‎COSRX,Sérums,,0
+24,GARNIER Skin Active Sérum Crème Booster D'Éclat,‎Garnier,Sérums,Citrus Limon Fruit Extract · Citrus Paradisi Fruit Extract,2
+25,GARNIER Skin Active Crème Hydratante Bio,‎Garnier,Sérums,Simmondsia Chinensis Seed Oil · Argania Spinosa Kernel Oil · Aloe Barbadensis Leaf Juice Powder · Citrus Paradisi Fruit Extract,4
+27,CeraVe Crème Hydratante Visage,‎CeraVe,Sérums,,0
+28,L’Oréal Paris Midnight Sérum Age Perfect,‎NYX PROFESSIONAL MAKEUP,Sérums,Saccharomyces/Xylinum/Black Tea Ferment · Tuber Aestivum Extract · Tuber Melanosporum Extract,3
+29,COSRX Advanced Snail 92 Crème tout-en-un,‎COSRX,Sérums,,0
+30,L'Oréal Paris Sérum Teinté Repulpant Accord Parfait,‎L'Oréal Paris,Sérums,Empetrum nigrum fruit juice,1
+1,Paula's Choice SKIN PERFECTING 2% BHA Lotion Exfoliante,‎PAULA'S CHOICE,Exfoliants Visage,Camellia Oleifera Leaf Extract,1
+2,L'Oréal Paris Peeling Toner Revitalift,‎L'Oréal Paris,Exfoliants Visage,Aloe barbadensis leaf juice · Citrullus lanatus fruit extract,2
+3,L'Oréal Men Expert Gel Désincrustant Anti-Pores Encrassés,‎L'Oréal Men Expert,Exfoliants Visage,Perlite · Mentha Piperita Extract,2
+4,Neutrogena Gel Exfoliant Pamplemousse Rose,‎Neutrogena,Exfoliants Visage,Jojoba esters · Citrus grandis fruit extract,2
+7,L'Oréal Paris Revitalift Exfoliant Doux,‎L'Oréal Paris,Exfoliants Visage,PEG-40 Hydrogenated castor oil · Coco-betaine,2
+9,Exfoliant Purifiant Skin Detox,‎Neutrogena,Exfoliants Visage,Sorbitol,1
+10,Medicube Zero Pore Pads 2.0,‎medicube,Exfoliants Visage,Citrus Aurantium Dulcis Peel Oil · Citrus Aurantifolia Peel Oil · Citrus Grandis Peel Oil · Citrus Aurantium Bergamia Fruit Oil · Rosmarinus Officinalis Leaf Oil · Eucalyptus Globulus Leaf Oil · Lavandula Angustifolia Oil · Vitis Vinifera Fruit Extract · Citrus Aurantifolia Fruit Extract · Citrus Limon Fruit Extract · Pyrus Malus Fruit Extract · Citrus Aurantium Dulcis Fruit Extract · Centella Asiatica Extract · Salix Alba Bark Extract · Origanum Vulgare Leaf Extract · Chamaecyparis Obtusa Leaf Extract · Lactobacillus/Soybean Ferment Extract · Cinnamomum Cassia Bark Extract · Scutellaria Baicalensis Root Extract · Portulaca Oleracea Extract · Oenothera Biennis Flower Extract · Pinus Palustris Leaf Extract · Ulmus Davidiana Root Extract · Pueraria Lobata Root Extract,24
+11,Garancia Pschitt Magique,‎Garancia,Exfoliants Visage,,0
+12,Gel Exfoliant Anti-Boutons,‎Neutrogena,Exfoliants Visage,Salicylic Acid,1
+13,Garnier Eau Micellaire Tout-en-1 Peeling Doux,‎Garnier,Exfoliants Visage,Ananas sativus fruit extract,1
+14,Pure Clean Scrub,‎KIKO Milano,Exfoliants Visage,Oryza Sativa Powder · Punica Granatum Fruit Extract,2
+15,Proraso Pâte Exfoliante Visage Barbe,‎Proraso,Exfoliants Visage,,0
+16,Beauty of Joseon Gel exfoliant fleur d'abricot,‎Beauty of Joseon,Exfoliants Visage,Prunus mume flower water · Pyrus malus fruit extract · Camellia sinensis leaf extract · Houttuynia cordata extract · Nelumbo nucifera flower extract · Oryza sativa extract · Prunus mume fruit extract · Vaccinium angustifolium fruit extract,8
+17,Noreva Exfoliac Global X-PRO,‎Noreva,Exfoliants Visage,Oryza Sativa Powder · Oenothera Biennis Oil · Imperata Cylindrica Root Extract · Punica Granatum Pericarp Extract · Helianthus Annuus Seed Oil,5
+19,GARNIER Pure Active Soin Exfoliant Visage,‎Garnier,Exfoliants Visage,Taraxacum officinale rhizome/root extract · Saccharomyces/rice ferment filtrate,2
+20,ISISPHARMA GLYCO-A,‎ISISPHARMA,Exfoliants Visage,Jojoba Esters · Helianthus Annuus Seed Wax · Acacia Decurrens Flower Wax,3
+23,Eau Précieuse - Lotion Purifiante Clearskin,‎Eau Précieuse,Exfoliants Visage,Eucalyptus Globulus Leaf Extract,1
+24,Biore Exfoliant Anti-Boutons ,‎Biore,Exfoliants Visage,,0
+1,Masques Visage au Collagène MYSOSBEAUTY,‎MY SOS BEAUTY,Crèmes Visage,Chondrus Crispus Powder · Helianthus Annuus Seed Oil · Galactomyces Ferment Filtrate,3
+3,Biodance Bio-Collagen Real Deep Mask Pack de 4,‎Biodance,Crèmes Visage,Galactomyces Ferment Filtrate · Ceratonia Siliqua Gum · Chondrus Crispus Extract · Pyrus Communis Fruit Extract · Rosa Damascena Flower Water · Iris Florentina Root Extract · Cucumis Melo Fruit Extract · Hedera Helix Leaf/Stem Extract · Bifida Ferment Filtrate · Lactobacillus Ferment · Lactobacillus Ferment Lysate,11
+4,Lotus Coton-Tiges,‎Lotus,Crèmes Visage,,0
+6,Mixa Sérum Booster d'Hydratation Hyalurogel,‎Mixa,Crèmes Visage,,0
+7,L'Oréal Paris CC Crème C'est Magic,‎L'Oréal Paris,Crèmes Visage,,0
+8,Mixa Intensif Peaux Sèches,‎Mixa,Crèmes Visage,Theobroma Cacao Seed Butter · Butyrospermum Parkii Butter,2
+12,L'Oréal Paris Revitalift Laser X3,‎L'Oréal Paris,Crèmes Visage,Simmondsia Chinensis Seed Oil · Centella Asiatica Extract,2
+14,Hero Mighty Patch Invisible+,‎HERO COSMETICS,Crèmes Visage,,0
+16,L'Oréal Men Expert Hydra Energetic 100 ml,‎L'Oréal Men Expert,Crèmes Visage,,0
+18,L’Oréal Paris Revitalift Filler Sérum,‎L'Oréal Paris,Crèmes Visage,Secale Cereale Seed Extract,1
+19,Sérum Concentré Anti-Imperfections,‎Mixa,Crèmes Visage,,0
+20,L’Oréal Paris Revitalift Clinical Fluide Anti-UV 50 ml,‎L'Oréal Paris,Crèmes Visage,,0
+21,Hero Mighty Patch Original,‎HERO COSMETICS,Crèmes Visage,,0
+22,Ambre Solaire Sérum Autobronzant Visage,‎Garnier,Crèmes Visage,Cocos Nucifera Fruit Juice · Aloe Barbadensis Leaf Juice,2
+23,L'Oréal Paris Revitalift Crème de Jour,‎L'Oréal Paris,Crèmes Visage,Butyrospermum Parkii Butter · Limnanthes Alba Seed Oil · Cera Alba · Glycine Soja Protein · Faex Extract,5
+24,La Provençale Bio Crème Rose de Jouvence Anti-Âge Éclat,‎La Provençale,Crèmes Visage,Simmondsia chinensis seed oil · Olea europaea fruit oil · Olea europaea fruit extract · Olea europaea leaf extract · Argania spinosa kernel oil · Aloe barbadensis leaf juice powder · Helianthus annuus seed oil,7
+26,Pure Active Gel Nettoyant Moussant,‎Garnier,Crèmes Visage,Coconut Acid,1
+27,L’Oréal Paris Revitalift Filler,‎L’Oréal Paris,Crèmes Visage,,0
+30,GARNIER Pure Active Patch Bouton XXL,‎Garnier,Crèmes Visage,,0

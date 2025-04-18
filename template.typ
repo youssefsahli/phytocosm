@@ -111,10 +111,10 @@
     arr.push(content)
     arr
   })
-
-  anx-idx.update(i => {i+1})
-  let label-name = "anx-"+ str(anx-idx.get())
-  link(label(label-name))[_cf annexe #str(anx-idx.get())_]
+  let c = anx-idx.get()
+  anx-idx.update(c+1)
+  let label-name = "anx-"+ str(c)
+  link(label(label-name))[_cf Annexe #str(c)_]
 }
 
 #let show_annexes() = context {
@@ -131,7 +131,7 @@
     )]
     [#acontent #label("anx-"+ str(count))]
     pagebreak(weak: true)
-    
+    count = count + 1
   }
 }
 
@@ -145,8 +145,10 @@
     }
 
     set figure(
-      placement: auto,
+      placement: none,
     )
+
+    show figure.caption: t => text(size: small-font-size, t)
 
     show heading: it => {
         set text(size: header-font-size)
@@ -248,14 +250,14 @@
           let args = nums.pos()
           let counter = 0
           let res = ()
-          let sep = ("\u{25B8}", "\u{25B9}", "\u{2981}")
+          let sep = ("\u{25B8}", "\u{25B9}", "\u{25D7}")
           for i in args {
             if counter == 0 { 
               res.push(str.from-unicode(64+i))
             } else if counter == 1 {
               res.push(str(i))
             } else if counter == 2 {
-              res.push(str.from-unicode(95+i))
+              res.push(str.from-unicode(96+i))
             }
             counter = counter + 1
           }
@@ -313,21 +315,24 @@
       header: [],
       columns: 2,
     )
-    set text(0.5em)
-    show bibliography: it => {
-      show heading: t => {
-        set text(size: 14pt)
-        t
-        v(4pt)
-      }
-      it
-    } 
-    bibliography(
-      "zotero.bib", 
-      title: [
-        Bibliographie
-      ],
-      style: "vancouver-superscript"
-    ) 
+    {
+      
+      show bibliography: it => {
+        show heading: t => {
+          set text(size: 14pt)
+          t
+          v(4pt)
+        }
+        set text(0.5em)
+        it
+      } 
+      bibliography(
+        "zotero.bib", 
+        title: [
+          Bibliographie
+        ],
+        style: "vancouver-superscript"
+      )
+    }
 }
 
