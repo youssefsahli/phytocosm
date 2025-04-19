@@ -1,6 +1,5 @@
 #import "@preview/hydra:0.5.1": hydra
 #import "@preview/numberingx:0.0.1"
-#import "/boxes.typ"
 #import "@preview/use-tabler-icons:0.8.0": *
 
 #let body-font-size = 13pt
@@ -305,9 +304,26 @@
             }
         }
     )
-    
-    body
 
+  {
+    show link: L => {
+      box(
+        baseline: 15%,
+        rect(
+          radius: 2pt,
+          inset: (x: 3pt, y: 3pt),
+          outset: (y: 3pt),
+          height: 1em,
+          fill: sepia-bg.lighten(50%),
+          text(
+          weight: "extralight",
+          L
+          )
+        )
+      )
+    }
+    body
+  }
     show_annexes()
     
     pagebreak(weak:true)
@@ -318,6 +334,27 @@
     {
       
       show bibliography: it => {
+        show link: L => {
+          let cs = (
+            "/doi/*[.org]": olive,
+            "ncbi": teal,
+            "sciencedirect": orange
+          )
+          let pc = gray
+          let T = L.body.text
+          for (r, cc) in cs {
+            if T.find(regex(r)) != none {
+              pc = cc
+              break
+            }
+          }
+          let c = pc.lighten(70%).transparentize(70%)
+          rect(
+            fill: c,
+            radius: 5pt,
+            L
+          ) 
+        }
         show heading: t => {
           set text(size: 14pt)
           t
@@ -328,10 +365,8 @@
       } 
       bibliography(
         "zotero.bib", 
-        title: [
-          Bibliographie
-        ],
-        style: "vancouver-superscript"
+        title: "Bibliographie",
+        style: "vancouver"
       )
     }
 }
