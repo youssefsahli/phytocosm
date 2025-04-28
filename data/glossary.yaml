@@ -25,6 +25,18 @@ IL-6:
   short: IL-6
   long: interleukine-6
 
+IFNγ:
+  short: IFN‑γ
+  long: interféron‑γ
+
+iNOS:
+  short: iNOS
+  long: NO‑synthase inductible
+
+LPS:
+  short: LPS
+  long: lipopolysaccharide
+  
 TNF-α:
   short: TNF-α
   long: facteur de nécrose tumorale alpha
@@ -33,11 +45,6 @@ MMP:
   short: MMP
   long: métalloprotéinase matricielle
   longplural: métalloprotéinases matricielles
-
-TLR:
-  short: TLR
-  long: récepteur Toll-like
-  longplural: récepteurs Toll-like
 
 DC:
   short: DC
@@ -251,3 +258,118 @@ dysbiose:
   short: dysbiose
   description: Déséquilibre qualitatif ou quantitatif du microbiote, pouvant altérer les fonctions barrières ou immunitaires de la peau.
   group: Définitions
+
+matreotype:
+  short: matréotype
+  description: Signature architecturale et biochimique de la matrice extracellulaire cutanée
+  group: Définitions
+
+senescence:
+  short: sénescence cellulaire
+  description: Arrêt irréversible du cycle cellulaire accompagné d’un phénotype sécrétoire inflammatoire (SASP), contribuant au vieillissement cutané.
+  group: Définitions
+
+photoproduit:
+  short: photoproduit
+  description: Lésion moléculaire induite par les UV (ex. dimères de pyrimidines) altérant la stabilité de l’ADN.
+  group: Définitions
+  
+nrf2keap1:
+  short: voie Nrf2/Keap1
+  description: Voie de signalisation où le facteur Nrf2, libéré de Keap1, déclenche l’expression de gènes antioxydants et de détoxification.
+  group: Définitions
+
+matrikine:
+  short: matrikine
+  description: Peptide bioactif issu de la dégradation de la matrice extracellulaire, jouant un rôle paracrine dans la réparation cutanée.
+  group: Définitions
+
+tyrosinase:
+  short: tyrosinase
+  description: Oxydase cupro‑dépendante catalysant l’hydroxylation de la L‑tyrosine puis l’oxydation de la L‑DOPA ; étape limitante de la mélanogenèse.
+  group: Définitions
+
+corneodesmosome:
+  short: cornéodesmosome
+  description: Jonction spécifique du stratum corneum assurant la cohésion des cornéocytes et régulant la desquamation.
+  group: Définitions
+
+filaggrine:
+  short: filaggrine
+  description: Protéine filament‑agrégante qui compacte la kératine et se dégrade en NMF, essentielle à la barrière cutanée.
+  group: Définitions
+
+NMF:
+  short: NMF
+  long: facteur naturel d’hydratation
+  description: Mélange hygroscopique (acides aminés, lactates, urée) retenant l’eau dans le stratum corneum.
+  group: Définitions
+
+SASP:
+  short: SASP
+  long: phénotype sécrétoire associé à la sénescence
+  description: Cocktail de cytokines, chimiokines et protéases libéré par les cellules sénescentes, entretenant l’inflammaging.
+  group: Définitions
+
+lipofuscine:
+  short: lipofuscine
+  description: Pigment brun autofluorescent issu d’agrégats lipoprotéiques oxydés, marqueur de stress oxydatif cellulaire.
+  group: Définitions
+
+inflammaging:
+  short: inflammaging
+  description: Inflammation de bas grade, chronique et liée à l’âge, accélérant le vieillissement cutané et systémique.
+  group: Définitions
+
+autophagie:
+  short: autophagie
+  description: Processus lysosomal de recyclage des composants cellulaires endommagés ; son déclin favorise l’accumulation de dommages et le vieillissement.
+  group: Définitions
+
+RAR:
+  short: RAR
+  long: récepteur de l'acide rétinoïque
+  description: Récepteur nucléaire ligand‑dépendant activé par les rétinoïdes ; régule l’expression de gènes clés de la différenciation kératinocytaire et de la synthèse de collagène.
+  group: Récepteurs
+
+RXR:
+  short: RXR
+  long: récepteur rétinoïde X
+  description: Récepteur nucléaire pouvant former des hétérodimères (RAR, PPAR, etc.) ; module la signalisation rétinoïdienne, le métabolisme lipidique et l’inflammation.
+  group: Récepteurs
+
+ERβ:
+  short: ERβ
+  long: récepteur œstrogénique β
+  description: Récepteur nucléaire impliqué dans de nombreux processus physiologiques, notamment la fonction de reproduction
+  group: Récepteurs
+
+PPAR:
+  short: PPAR
+  long: récepteur activé par les proliférateurs de peroxysomes
+  description: Récepteur nucléaire modulant la synthèse lipidique, la différenciation kératinocytaire et l’inflammation.
+  group: Récepteurs
+
+AHR:
+  short: AhR
+  description: Récepteur cytosolique des hydrocarbures aromatiques polycycliques, impliqué dans la pigmentation, l’inflammation et la détoxification cutanée.
+  group: Récepteurs
+
+VDR:
+  short: VDR
+  long: récepteur de la vitamine D
+  description: Récepteur nucléaire activé par le calcitriol (1,25‑(OH)₂‑vitamine D₃) ; module la prolifération kératinocytaire, la différenciation et l’immunité cutanée.
+  group: Récepteurs
+
+AR:
+  short: AR
+  long: récepteur androgénique
+  description: Récepteur nucléaire sensible à la testostérone/dihydrotestostérone ; gouverne la production de sébum, la pilosité et certaines réponses inflammatoires.
+  group: Récepteurs
+
+TLR:
+  short: TLR
+  long: récepteur Toll‑like
+  longplural: récepteurs Toll‑like
+  description: Récepteurs de l’immunité innée détectant des motifs microbiens ou endogènes (DAMP) et déclenchant la signalisation NF‑κB.
+  group: Récepteurs

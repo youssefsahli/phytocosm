@@ -189,3 +189,54 @@
     )
   )
 }
+
+#let plant(
+  pp, // plant img path
+  pc, // plant caption
+  fp, // fruit img path
+  fc, // fruit caption
+  psize: auto,
+  fsize: auto,
+) = {
+  v(1em)
+  rect(
+    stroke: rgb("#fdf9f1").darken(10%),
+    fill: rgb("#fdf9f1").lighten(70%),
+    inset: 10pt,
+    outset: 10pt,
+    radius: 10pt,
+    grid(
+      columns: (1fr, 1fr),
+      column-gutter: 15pt,
+      align: bottom,
+      figure(
+        caption: emph(pc),
+          rect(
+            stroke: gray.transparentize(80%)+1pt,
+            radius: 10pt,
+            image(height: psize, pp))),
+      figure(
+        caption: emph(fc),
+          rect(
+            stroke: gray.transparentize(80%)+1pt,
+            radius: 10pt,
+            image(height: fsize, fp))),
+      )
+  )
+    v(1em)
+}
+
+#let gnote(content) = {
+  set text(size: 11pt, weight: "thin", font: "Cochin")
+  set par(leading: 1.4em)
+  showybox(
+    frame: (
+    border-color: white,
+    body-color: olive.lighten(80%)
+  ),
+  shadow: (
+	  offset: (x: 2pt, y: 3pt),
+    color: yellow.lighten(70%)
+  ), content
+  )
+}

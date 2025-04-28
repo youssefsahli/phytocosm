@@ -90,7 +90,10 @@ Une première observation montre qu’une majorité des produits figurant parmi 
 
 #figure(
   caption: [Liste des top ingrédients utilisés par les cosmétiques bestsellers d'Amazon France · _(adjusted weight)_],
-  image(height: 30%, "ingredient_list_lollipop.png"),
+  pad(
+    rest: 30pt,
+    image(height: 30%, "ingredient_list_lollipop.png")
+  ),
 ) <lollipop-1>
 
 #annexe[
