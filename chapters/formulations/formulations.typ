@@ -2,5 +2,5 @@
 
 = Formulations courantes et synergie <formulations>
 #hdesc[
-  Description des formulations efficaces souvent retrouvées dans les bestsellers, et évaluation des proclamations marketing et de leur véracité.
+  Analyse des formulations couramment utilisées dans les cosmétiques bestsellers, accompagnée d’une évaluation critique des affirmations marketing et de leur fiabilité.
 ]

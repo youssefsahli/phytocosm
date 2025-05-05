@@ -70,7 +70,7 @@
 #let note(title, txt) = grbox(title, txt)
 
 //Product Box
-#let pbox(pname, pfab, ingredients) = {
+#let pbox(pname, pfab, ..ingredients) = {
     let items = upper(ingredients.pos().join(" · "))
     show: rest => {align(center, rest)}
     showybox(
@@ -82,16 +82,17 @@
         title-style: (
             color: black,
             font: "MesloLGS NF",
-            weight: "bold",
-            align: center
+            weight: "regular",
+            align: center,
         ),
 
         body-style: (
             align: center,
+            
         ),
 
-        title: [#pfab#super[©] #box[_ #pname _]],
-        small(items)
+        title: text(size: 10pt)[#upper(pfab)#super[©] -- #box[#pname]],
+        text(size: 10pt, small(items))
     )
 }
 
@@ -142,7 +143,7 @@
                   }
                 )
 
-                #if content.children.len() > 0 {
+                #if content.has("children") and content.children.len() > 0 {
                     v(10pt)
                     line(length: 50%)
                     set text(size: 10pt)

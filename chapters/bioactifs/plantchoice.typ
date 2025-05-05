@@ -65,7 +65,29 @@ L'extraction de ses principes actifs se fait par macération puis filtration: Le
 
 Les parties aériennes de C. asiatica concentrent un ensemble remarquable de triterpènes pentacycliques — asiaticoside, madecassoside, acide asiatique et acide madecassique — auxquels s’ajoutent flavonoïdes et tanins. Les saponines asiaticoside et madecassoside stimulent la prolifération fibroblastique, l’angiogenèse et la synthèse de collagène de types I et III, accélérant ainsi la réparation tissulaire et la cicatrisation des plaies @park_pharmacological_2021. Parallèlement, ces composés exercent une action antioxydante et anti‑inflammatoire démontrée, notamment via l’inhibition de NF‑κB et la modulation de TNF‑α et IL‑6 @diniz_centella_2023.
 
-En cosmétique, les extraits titrés (« TECA » pour Titrated Extract of C. asiatica) s’intègrent dans des crèmes dites « cicatrisantes » pour renforcer la barrière cutanée, réduire la @TEWL et apaiser rougeurs ou prurit des peaux sensibles. Une étude clinique récente (2025) montre qu’une essence enrichie en madecassoside améliore significativement l’hydratation, l’élasticité et l’uniformité pigmentaire après 28 jours d’application @chang_evaluation_2025. De plus, l’incorporation d’asiaticoside dans des _nanoscaffolds (nano-échaffaudages)_ ou des pansements à microaiguilles accroît sa biodisponibilité et ouvre des perspectives pour la prise en charge des ulcères du pied diabétique @razif_asiaticoside-loaded_2025 et des cicatrices hypertrophiques @kumar_nanotechnology-driven_2024, .
+En cosmétique, les extraits titrés (« TECA » pour Titrated Extract of C. asiatica) s’intègrent dans des crèmes dites « cicatrisantes » pour renforcer la barrière cutanée, réduire la @TEWL et apaiser rougeurs ou prurit des peaux sensibles. Une étude clinique récente (2025) montre qu’une essence enrichie en madecassoside améliore significativement l’hydratation, l’élasticité et l’uniformité pigmentaire après 28 jours d’application @chang_evaluation_2025. De plus, l’incorporation d’asiaticoside dans des _nanoscaffolds (nano-échaffaudages)_ ou des pansements à microaiguilles accroît sa biodisponibilité et ouvre des perspectives pour la prise en charge des ulcères du pied diabétique @razif_asiaticoside-loaded_2025 et des cicatrices hypertrophiques @kumar_nanotechnology-driven_2024.
+
+#pcomp(
+  "Asiaticoside A",
+  [Saponine triterpénique extraite de la plante Centella Asiatica @pubchem_asiaticoside_nodate],
+  [
+    - Anti-inflammatoire
+    - Réparateur cutané
+    - Antioxydant
+  ],
+  "/img/mol/asiaticosideA.png"
+)
+
+#pcomp(
+  "Acide asiatique",
+  [Acide triterpénique dérivé de Centella Asiatica],
+  [
+    - Cicatrisation
+    - Synthèse de collagène
+    - Réduction de l’inflammation
+  ],
+  "/img/mol/Asiatic_Acid.png"
+)
 
 L’innocuité cutanée de C. asiatica est globalement élevée ; cependant, quelques cas isolés de dermatite allergique de contact ont été rapportés, tandis qu’un usage oral prolongé peut exposer à un risque hépatotoxique dose‑dépendant, invitant à la prudence 
 @johnson_safety_2023. Les recherches actuelles ciblent l’optimisation galénique des triterpènes (liposomes, hydrogels) et l’exploration de leurs effets sur le microbiome cutané et les dyschromies post‑inflammatoires.
@@ -82,7 +104,9 @@ Ainsi, Centella asiatica s’impose comme un actif végétal polyvalent — cica
 )
 === Glabridine
 
-La glabridine est un isoflavonoïde prenylé #footnote[il contient un _prenyl_ -- C#sub[5]H#sub[9], 3-methyl-2-butenyl lié à son cycle aromatique; cela lui confère sa lipophilie.] contenue dans les racines de Glycyrrhiza glabra (L.). C'est une plante vivace de la famille des Fabaceae, et originaire du bassin méditerranéen; ses rhizomes et racines sont récoltés depuis l'antiquité
+Glycyrrhiza glabra (L.) est une plante vivace de la famille des Fabaceae, et originaire du bassin méditerranéen; ses rhizomes et racines sont récoltés depuis l'antiquité pour leurs propriétés médicinales et aromatiques @pastorino_liquorice_2018. Utilisée traditionnellement comme édulcorant naturel et remède contre les troubles digestifs, Glycyrrhiza glabra est également étudiée pour ses composés bioactifs, qui présentent une activité antioxydante, anti-inflammatoire et dépigmentante.
+La glabridine (@mol-glabridine) est un isoflavonoïde prenylé #footnote[il contient un _prenyl_ -- C#sub[5]H#sub[9], 3-methyl-2-butenyl lié à son cycle aromatique; cela lui confère sa lipophilie.] contenue dans ses racines.
+
 
 #pcomp(
   "Glabridine",
@@ -95,7 +119,14 @@ La glabridine est un isoflavonoïde prenylé #footnote[il contient un _prenyl_ -
   "/img/mol/Glabridin.svg"
 )
 
-
+#plant(
+  "/img/plants/glycyrrhiza.png",
+  [Glycyrrhiza glabra (Fabaceae) — Plante herbacée vivace à feuilles composées pennées et alternes. Les fleurs, disposées en grappes axillaires, sont papilionacées et de teinte violacée.],
+  "/img/plants/glyccyrhiza_roots_fruit.png",
+  [Détail du rhizome cylindrique, brun jaunâtre, à surface fibreuse, accompagné de racines secondaires fines et ramifiées.],
+  psize: 30%,
+  fsize: 20%
+)
 
 
 

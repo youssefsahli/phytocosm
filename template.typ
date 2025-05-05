@@ -113,7 +113,7 @@
   let c = anx-idx.get()
   anx-idx.update(c+1)
   let label-name = "anx-"+ str(c)
-  link(label(label-name))[_cf Annexe #str(c)_]
+  link(label(label-name))[_Annexe #str(c)_]
 }
 
 #let show_annexes() = context {

@@ -1,7 +1,12 @@
 #import "/template.typ": desc, annexe, hdesc
-== Le marché des cosmétiques naturels
+#import "/boxes.typ": gnote
+== Le marché des phytocosmétiques
 #desc[
   Étude de la place des principes actifs originaires de plantes dans le marché des cosmétiques actuel, en France et dans le monde.
+]
+
+#hdesc[
+  L'ambiguité enveloppant la composition des cosmétiques en produits naturels, et botaniques a permis la création de la norme ISO 16128 en 2017 @noauthor_iso_nodate, dans le but d'harmoniser les terminologies liées à ces ingrédients, en particulier le *calcul des proportions de composés naturels* dans un produit donné. Cette norme est contestée par de nombreux laboratoires @noauthor_questions_nodate.
 ]
 
 L'industrie des cosmétiques est segmentée en différentes catégories: les soins capillaires, les soins cutanés, le maquillage et colorations, les parfums, produits d'hygiène (douche, bain, deodorants) -- qui sont les plus utilisés @ficheux_consumption_2015, et enfin la protection solaire @weber_differences_2002. Ces utilisations diverses nécessitent une composition très variée selon l'indication de chaque produit, et une recherche de l'effet le plus adapté, avec une toxicité la plus faible possible #footnote[En particulier dans les produits destinés aux enfants et aux femmes enceintes].
@@ -89,12 +94,20 @@ Une première observation montre qu’une majorité des produits figurant parmi 
 ]]
 
 #figure(
-  caption: [Liste des top ingrédients utilisés par les cosmétiques bestsellers d'Amazon France · _(adjusted weight)_],
-  pad(
-    rest: 30pt,
-    image(height: 30%, "ingredient_list_lollipop.png")
-  ),
-) <lollipop-1>
+    caption: [Liste des top ingrédients utilisés par les cosmétiques bestsellers d'Amazon France · _(adjusted weight)_],
+    grid(
+      columns: (1fr, 1fr),
+      align: horizon,
+      figure(
+        table(
+          columns: 2,
+          ..csv("/data/ingredients_sorted.csv").flatten()
+        ),
+      ),
+      
+      image(width: 100%, "ingredient_list_lollipop.png")
+    ),
+  ) <lollipop-1>
 
 #annexe[
   #hdesc[
@@ -105,3 +118,4 @@ Une première observation montre qu’une majorité des produits figurant parmi 
     caption: [ Graphe pour $"weight" eq 0.6$, toute catégorie confondue]
   )
 ]
+

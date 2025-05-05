@@ -7,7 +7,7 @@
 #title[
     Intérêt de certains principes actifs végétaux en dermo-cosmétologie
     
-    #subtitle[Focus sur le gel d'aloé vera, le bisobolol, le bachukiol..]
+    #subtitle[Focus sur le gel d'aloé vera, le bisobolol, le bakuchiol..]
     // #image("./img/cover.png", width: 60%, alt: "cover image")
 ]
 
@@ -23,6 +23,6 @@
 #section("chapters/formulations/formulations.typ")
 #section("chapters/galénique/galenic.typ")
 #section("chapters/ecology/ecology.typ")
-
+#section("chapters/products/products.typ")
 
 #pagebreak(weak: true)
