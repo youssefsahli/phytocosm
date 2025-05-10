@@ -1,13 +1,12 @@
 #import "/template.typ": desc, annexe, hdesc
 #import "/boxes.typ": *
-#import "@preview/wrap-it:0.1.1": wrap-content
 
 == Actifs phares de la recherche actuelle
 #desc[
   Liste de plantes d'intérêt en cosmétique encore méconnues. Discussion des bénéfices et des risques associés, ainsi que de l'état des connaissances sur leur pharmacodynamie.
 ]
 === Bakuchiol
-#wrap-content(
+#wrp(
   align: top+right,
   box(
     width: 200pt,
@@ -39,7 +38,7 @@ C'est l'un des nombreux composés retrouvé dans le fruit, qui est riche en phé
 )
 
 Le bakuchiol reste un élément provoquant des réactions divergentes quant à son efficacité par rapport aux trétinoïdes @sivamani_cosmetic_2022. Il a pourtant une meilleure tolérance cutanée, et son action immuno-modulatrice et anti-microbienne permettrait un soin moins contraignant de l'acné @greenzaid_use_2022.
-#wrap-content[
+#wrp[
   #box(
     width: 200pt,
     gnote[NF-κB pour nuclear factor-kappa B ou facteur nucléaire kappa B est une protéine de la superfamille des facteurs de transcription impliquée dans la réponse immunitaire et la réponse au stress cellulaire.]
@@ -49,9 +48,9 @@ Dans des modèles in vitro utilisant des macrophages murins activés par l’@IF
 
 #plant(
   "/img/plants/corylifolia.png", 
-  [Illustration botanique détaillée de la plante entière, incluant les feuilles opposées et l’inflorescence en épi.],
+  [Psoralea corylifolia (Fabaceae) -- avec ses feuilles opposées et l’inflorescence en épi.],
   "/img/plants/corylifolia_fruit.png",
-  [Graine de Psoralea corylifolia (Fabaceae) — Vue externe illustrant la surface brun foncé, ridée et légèrement brillante de la graine. Cette dernière est contenue dans une drupe indéhiscente. Le tégument est épais et strié verticalement, renfermant une unique graine riche en bakuchiol.],
+  [Graine de Psoralea corylifolia (Fabaceae) — illustrant la surface brun foncé, ridée et légèrement brillante de la graine. Cette dernière est contenue dans une drupe indéhiscente. Le tégument est épais et strié verticalement, renfermant une unique graine riche en bakuchiol.],
   psize: 30%,
   fsize: 10%
 ) <psoralea>
@@ -65,7 +64,17 @@ L'extraction de ses principes actifs se fait par macération puis filtration: Le
 
 Les parties aériennes de C. asiatica concentrent un ensemble remarquable de triterpènes pentacycliques — asiaticoside, madecassoside, acide asiatique et acide madecassique — auxquels s’ajoutent flavonoïdes et tanins. Les saponines asiaticoside et madecassoside stimulent la prolifération fibroblastique, l’angiogenèse et la synthèse de collagène de types I et III, accélérant ainsi la réparation tissulaire et la cicatrisation des plaies @park_pharmacological_2021. Parallèlement, ces composés exercent une action antioxydante et anti‑inflammatoire démontrée, notamment via l’inhibition de NF‑κB et la modulation de TNF‑α et IL‑6 @diniz_centella_2023.
 
+#wrp(
+  align: right,
+  box(
+    width: 200pt,
+    gnote[
+      Les échafaudages nanofibreux sont des analogues synthétiques de la matrice extracellulaire (MEC) naturelle, conçus pour favoriser l’adhésion et la répartition cellulaire tout en facilitant la régénération tissulaire.
+    ]
+  )
+)[
 En cosmétique, les extraits titrés (« TECA » pour Titrated Extract of C. asiatica) s’intègrent dans des crèmes dites « cicatrisantes » pour renforcer la barrière cutanée, réduire la @TEWL et apaiser rougeurs ou prurit des peaux sensibles. Une étude clinique récente (2025) montre qu’une essence enrichie en madecassoside améliore significativement l’hydratation, l’élasticité et l’uniformité pigmentaire après 28 jours d’application @chang_evaluation_2025. De plus, l’incorporation d’asiaticoside dans des _nanoscaffolds (nano-échaffaudages)_ ou des pansements à microaiguilles accroît sa biodisponibilité et ouvre des perspectives pour la prise en charge des ulcères du pied diabétique @razif_asiaticoside-loaded_2025 et des cicatrices hypertrophiques @kumar_nanotechnology-driven_2024.
+]
 
 #pcomp(
   "Asiaticoside A",
@@ -104,8 +113,8 @@ Ainsi, Centella asiatica s’impose comme un actif végétal polyvalent — cica
 )
 === Glabridine
 
-Glycyrrhiza glabra (L.) est une plante vivace de la famille des Fabaceae, et originaire du bassin méditerranéen; ses rhizomes et racines sont récoltés depuis l'antiquité pour leurs propriétés médicinales et aromatiques @pastorino_liquorice_2018. Utilisée traditionnellement comme édulcorant naturel et remède contre les troubles digestifs, Glycyrrhiza glabra est également étudiée pour ses composés bioactifs, qui présentent une activité antioxydante, anti-inflammatoire et dépigmentante.
-La glabridine (@mol-glabridine) est un isoflavonoïde prenylé #footnote[il contient un _prenyl_ -- C#sub[5]H#sub[9], 3-methyl-2-butenyl lié à son cycle aromatique; cela lui confère sa lipophilie.] contenue dans ses racines.
+Glycyrrhiza glabra (L.) est une plante vivace de la famille des Fabaceae, et originaire du bassin méditerranéen; ses rhizomes et racines sont récoltés depuis l'antiquité pour leurs propriétés médicinales et aromatiques @pastorino_liquorice_2018[p. 1]. Utilisée traditionnellement comme édulcorant naturel et remède contre les troubles digestifs, Glycyrrhiza glabra est également étudiée pour ses composés bioactifs, qui présentent une activité antioxydante, anti-inflammatoire et dépigmentante.
+La glabridine (@mol-glabridine) est un isoflavonoïde prenylé #footnote[il contient un _prenyl_ -- C#sub[5]H#sub[9], 3-methyl-2-butenyl lié à son cycle aromatique; cela lui confère sa lipophilie.] contenue dans ses racines, et en moindre concentration dans ses feuilles @pastorino_liquorice_2018[p. 2].
 
 
 #pcomp(
@@ -119,6 +128,24 @@ La glabridine (@mol-glabridine) est un isoflavonoïde prenylé #footnote[il cont
   "/img/mol/Glabridin.svg"
 )
 
+#wrp(
+  box(
+    gnote[
+      #table(
+        [Composants],
+        [Liquiritine],
+        [Glycyrrhizine],
+        [Liquiritigénine],
+        [acide 18β‐Glycyrrhétinique],
+        [Licochalcone A],
+        [Glabridine]
+      )
+    ]
+  )
+)[
+La glabridine n'est pas la seule molécule contenue dans les racines de réglisse; on retrouve une dizaine de composants dont les cyles aromatiques (phenols) sont responsables de l'effet anti-oxydant observé @rackova_mechanism_2007.
+]
+
 #plant(
   "/img/plants/glycyrrhiza.png",
   [Glycyrrhiza glabra (Fabaceae) — Plante herbacée vivace à feuilles composées pennées et alternes. Les fleurs, disposées en grappes axillaires, sont papilionacées et de teinte violacée.],
@@ -128,6 +155,69 @@ La glabridine (@mol-glabridine) est un isoflavonoïde prenylé #footnote[il cont
   fsize: 20%
 )
 
-
-
 === Acide ellagique
+L'acide ellagique, retrouvé dans #taxon[Punica granatum] mais aussi dans de nombreuses espèces (noix, fraises #taxon[Fragaria ananassa]) est un métabolite retrouvé sous forme libre mais aussi sous forme complexée -- appelées alors _éllagitannins_ @rios_pharmacological_2018. C'est un composé particulièrement intéressant en tant que protecteur de l'oxydation UV-induite.
+
+#pcomp(
+  "Acide ellagique",
+  [ Polyphénol dilactone de l'acide hexahydroxydiphénique @pubchem_ellagic_nodate],
+  [
+    - Antioxydant par 
+    - Inhibiteurs @TNF-α, @IL-6, @VoieNFkB
+    - Agoniste @NRF2
+  ],
+  "/img/mol/Ellagic_acid.svg"
+)
+
+=== Matricaria chamomilla
+
+#wrp(
+  align: right + bottom,
+  box(
+    width: 250pt,
+    gnote[
+      Différents isomères existent. L'α-Bisabolol est le plus abondant dans l'huile essentielle de #taxon[Matricaria chamomilla]#footnote[L'huile essentielle peut contenir plus de 40% de cette molécule]. Le β-Bisabolol -- qui diffère dans la position des insaturations -- est beaucoup plus rare. Le mélange racémique [(+)- and (−)-α-bisabolol] est le plus souvent retrouvé dans les formulations commerciales. 
+    ]
+  )
+)[
+  Aussi appelé *levomenol*, l'#link( label("mol-levomenol ◖ α-bisabolol") )[α-Bisabolol] fut isolé au XX#super[ème] siècle à partir de #taxon[Matricaria chamomilla] de la famille des #box[Asteraceaes -- aussi appelée Matricaire,] ou Camomille allemande. Espèce largement distribuée à travers le monde (en Asie, Europe, Afrique du Nord), on la retrouve à l'état sauvage en France, mais aussi en culture en Europe de l'Est et en Inde @singh_chamomile_2011. Contrairement aux autres camomilles #footnote[#taxon[Chamaemelum nobile], la camomille romaine et #taxon[Tanacetum parthenium], la grande camomille], c'est une plante annuelle, utilisée depuis l'Antiquité pour son effet anti-inflammatoire, sédatif, et anti-bactérien. 
+]
+
+Plante médicinale à l’usage millénaire, Matricaria chamomilla est riche en sesquiterpènes et flavonoïdes, dont l’α-bisabolol constitue un constituant majeur de son huile essentielle. Ce composé lipophile est un alcool monocyclique de type sesquiterpénique, de formule brute C₁₅H₂₆O, possédant une activité anti-inflammatoire, antibactérienne et apaisante documentée in vitro comme in vivo @tai_biosynthesis_2023. Il inhibe notamment la synthèse de prostaglandines en réduisant l’activité de la @COX-2, et bloque l’expression de médiateurs inflammatoires via une inhibition de la voie @VoieNFkB @kim_inhibitory_2011. Son profil toxicologique est favorable, avec une faible incidence d’irritation cutanée, ce qui explique sa large utilisation dans les soins pour peaux sensibles, atopiques ou érythémateuses @andersen_final_1999. Des cas d'allergies de contact existent malgré tout. Le bisabolol peut aussi être obtenu par voie semi-synthétique ou via la distillation de bois de #taxon[Vanillosmopsis erythropappa] au Brésil, arbre appartenant à la famille des Asteraceae, bien que cette origine soulève des problématiques écologiques liées à la surexploitation forestière @sandasi_untargeted_2012.
+
+#pcomp(
+  "Levomenol ◖ α-Bisabolol",
+  [L'α–(–)-bisabolol, également appelé lévoménol],
+  [
+    - Inhibiteur @TNF-α, @IL-1, @IL-6, @iNOS, @COX-2:short
+    - Antagoniste @VoieNFkB, @p38:short, @ERK1_2, @JNK:short
+    - Réduction des @ROS:pl
+  ],
+  "/img/mol/levomenol.svg"
+)
+
+#{
+  set text(size: 10pt)
+  figure(
+  caption: [Cibles du Bisabolol et cascades métaboliques],
+  table(
+    align: left,
+    columns: 3,
+    ..csv("/data/bisabolol.csv").flatten()
+  ))
+}
+
+Bien qu'utilisé depuis de nombreuses années par les industriels cosmétiques, de nouvelles propriétés pharmacodynamiques sont répertoriées avec le temps @ramazani_pharmacological_2022. L'activité *antioxydante* fut déterminée par réduction des @ROS et de @RNS. Le @MDA, marqueur de la peroxydation lipidique est diminué. Enfin, le bisabolol diminue la libération de cytokines pro-inflammatoires -- @IL-1, @IL-6, @TNF-α --, de médiateurs associés -- @COX-2, @iNOS et augmente l'expression d'enzymes protectrices -- @SOD, @CAT -- @eddin_health_2022.  L'effet anti-apoptotique #footnote[Effet déclenché par UV, mais aussi par vieillissement] est dû à une régulation d'expression positive de bcl-2 (stabilisateur de membrane), et en diminuant l'expression de bax, P53, de la caspase-3, et de l'apoptosome [APAF-1 - caspase-9].
+
+#plant(
+  "/img/plants/matricaire.png",
+  [Matricaria chamomilla (L.) Rauschert (Asteraceae)],
+  "/img/plants/matricaire_fleur.png",
+  [Vue détaillée du capitule mettant en évidence les fleurons ligulés et tubulés ],
+  psize: 30%,
+  fsize: 20%
+)
+
+De nombreuses autre plantes contiennent du bisabolol, 
+
+Le Chamazulène

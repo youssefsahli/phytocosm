@@ -1,6 +1,6 @@
 #import "/template.typ": desc, annexe, hdesc
 #import "/boxes.typ": gnote
-== Le marché des phytocosmétiques
+== Le marché des phytocosmétiques <market-study>
 #desc[
   Étude de la place des principes actifs originaires de plantes dans le marché des cosmétiques actuel, en France et dans le monde.
 ]

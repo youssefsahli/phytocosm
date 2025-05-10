@@ -41,6 +41,10 @@ TNF-α:
   short: TNF-α
   long: facteur de nécrose tumorale alpha
 
+MDA:
+  short: MDA
+  long: malondialdehyde
+  
 MMP:
   short: MMP
   long: métalloprotéinase matricielle
@@ -63,7 +67,36 @@ UV:
 
 ROS:
   short: ROS
+  plural: ROS
   long: espèces réactives de l’oxygène
+
+CREB:
+  short: CREB
+  long: cAMP-response element-binding protein
+  description: >
+    Facteur de transcription nucléaire dont la phosphorylation (PKA, MAPK, MSK1)
+    active la transcription de MITF et stimule la mélanogenèse.
+
+CRTC1:
+  short: CRTC1
+  long: CREB-regulated transcription coactivator 1
+  description: >
+    Co-activateur cytoplasmique; une fois déphosphorylé, il migre dans le noyau,
+    se lie à CREB et amplifie l’expression de MITF dans les mélanocytes.
+
+MITF:
+  short: MITF
+  long: microphthalmia-associated transcription factor
+  description: >
+    Facteur clé de la différenciation des mélanocytes; contrôle l’expression de la
+    tyrosinase, TRP-1/2 et d’autres gènes de biosynthèse de mélanine.
+
+RNS:
+  short: RNS
+  long: espèces réactives de l’azote
+  description: >
+    Molécules dérivées de l'oxyde nitrique (NO) et du superoxyde (O₂•⁻), telles que le peroxynitrite (ONOO⁻), le dioxyde d'azote (•NO₂) et le trioxide de diazote (N₂O₃). Les RNS sont produites par l'activité enzymatique de la NO-synthase inductible (iNOS) et de la NADPH oxydase, notamment dans les macrophages activés par l'IFN-γ ou le LPS. Elles participent aux défenses immunitaires, à la signalisation cellulaire et au stress nitrosatif, en modifiant lipides, protéines et ADN.
+  group: Définitions
 
 TEWL:
   short: TEWL
@@ -73,10 +106,34 @@ SLS:
   short: SLS
   long: laurylsulfate de sodium
 
+SOD:
+  short: SOD
+  long: super oxyde dismutase
+
+CAT:
+  short: CAT
+  long: catalase
+
 UVB:
   short: UVB
   long: rayonnement ultraviolet B
   longplural: rayonnements ultraviolets B
+
+p38:
+  short: p38
+  long: Protéine kinase p38
+
+ERK1_2:
+  short: ERK1/2
+
+JNK:
+  short: JNK
+  long: Kinase N-terminale de c-Jun
+
+COX-2:
+  short: COX-2
+  long: Cyclooxygénase-2
+  description: Enzyme inductible produisant des prostaglandines pro-inflammatoires, cible majeure des extraits végétaux anti-inflammatoires.
 
 EGCG:
   short: EGCG
@@ -277,7 +334,6 @@ photoproduit:
 nrf2keap1:
   short: voie Nrf2/Keap1
   description: Voie de signalisation où le facteur Nrf2, libéré de Keap1, déclenche l’expression de gènes antioxydants et de détoxification.
-  group: Définitions
 
 matrikine:
   short: matrikine
@@ -303,13 +359,11 @@ NMF:
   short: NMF
   long: facteur naturel d’hydratation
   description: Mélange hygroscopique (acides aminés, lactates, urée) retenant l’eau dans le stratum corneum.
-  group: Définitions
 
 SASP:
   short: SASP
   long: phénotype sécrétoire associé à la sénescence
   description: Cocktail de cytokines, chimiokines et protéases libéré par les cellules sénescentes, entretenant l’inflammaging.
-  group: Définitions
 
 lipofuscine:
   short: lipofuscine
@@ -373,3 +427,87 @@ TLR:
   longplural: récepteurs Toll‑like
   description: Récepteurs de l’immunité innée détectant des motifs microbiens ou endogènes (DAMP) et déclenchant la signalisation NF‑κB.
   group: Récepteurs
+
+FGFR:
+  short: FGFR
+  long: récepteur des facteurs de croissance fibroblastiques
+  longplural: récepteurs des FGF
+  description: Récepteurs à activité tyrosine kinase impliqués dans la régénération dermique, la cicatrisation et la prolifération cellulaire.
+  group: Récepteurs
+
+EGFR:
+  short: EGFR
+  long: récepteur du facteur de croissance épidermique
+  longplural: récepteurs du facteur de croissance épidermique
+  description: Récepteur transmembranaire régulant la prolifération kératinocytaire, la réparation cutanée et l’inflammation.
+  group: Récepteurs
+
+NRF2:
+  short: NRF2
+  long: facteur nucléaire erythroid 2‑related factor 2
+  description: Facteur de transcription cytosolique se liant à ARE pour activer les gènes antioxydants et cytoprotecteurs.
+  group: Récepteurs
+
+GR:
+  short: GR
+  long: récepteur des glucocorticoïdes
+  description: Récepteur nucléaire régulant les réponses anti-inflammatoires et le métabolisme épidermique.
+  group: Récepteurs
+
+
+Flavonoïde:
+  short: Flavonoïde
+  longplural: flavonoïdes
+  description: >
+    Polyphénols végétaux dérivés du phénylbenzopyrone, aux propriétés antioxydantes et anti-inflammatoires.
+  group: Définitions
+
+Terpène:
+  short: Terpène
+  longplural: terpènes
+  description: >
+    Composés aromatiques construits à partir d'isopentényl-pyrophosphate, et de formule (C₅H₈)n. ils donnent les propriétés odorifères aux plantes les possédants.
+  group: Définitions
+
+Synergie:
+  short: synergie
+  longplural: synergies
+  description: >
+    Interaction entre molécules menant à un effet unique et supérieur à leur somme.
+  group: Définitions
+
+Effetadditif:
+  short: effet additif
+  long: effet additif
+  longplural: effets additifs
+  description: >
+    Effet combiné équivalent à la somme des effets individuels, sans synergie.
+  group: Définitions
+
+Biodisponibilité:
+  short: Biodisponibilité
+  longplural: biodisponibilités
+  description: >
+    Fraction d’un actif atteignant sa cible biologique sous forme active.
+  group: Définitions
+
+relipidant:
+  short: relipidant
+  longplural: relipidants
+  description: >
+    restaure les lipides cutanés afin de renforcer la barrière cutanée, et de maintenir un niveau d'hydratation adéquat.
+  group: Définitions
+
+Pharmacodynamie:
+  short: pharmacodynamie
+  longplural: pharmacodynamies
+  description: >
+    Étude des effets biologiques d’un actif et de leurs mécanismes au niveau cellulaire.
+  group: Définitions
+
+VoieNFkB:
+  short: NF‑κB
+  long: voie NF‑κB
+  longplural: voies NF‑κB
+  description: >
+    Voie intracellulaire activant l’inflammation via transcription de cytokines. Cible fréquente d’actifs anti-inflammatoires.

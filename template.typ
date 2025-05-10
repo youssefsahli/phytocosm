@@ -147,8 +147,13 @@
       placement: none,
     )
 
-    show figure.caption: t => text(size: small-font-size, t)
-
+    show figure.caption: c => context {
+      set text(size: small-font-size)
+      let numb = c.numbering
+      if c.kind == table { numb = "I" }
+      [#c.supplement #c.counter.display(numb) --- #c.body]
+    }
+      
     show heading: it => {
         set text(size: header-font-size)
         context {

@@ -1,6 +1,9 @@
 #import "@preview/showybox:2.0.4": showybox
 #import "@preview/frame-it:1.1.2": *
+#import "@preview/wrap-it:0.1.1": wrap-content
 #import "/template.typ": * 
+
+#let wrp = wrap-content
 
 #let date(s) = {
   let (d, m, y) = str.split(s, regex("[/-]")).map(int)
@@ -30,6 +33,9 @@
     showybox(
         frame: (
             border-color: black,
+            footer-color: sepia
+                            .lighten(94%)
+                            .desaturate(50%),
         ),
         title-style: (
             color: white,
@@ -39,9 +45,16 @@
                 radius: 5pt
             )
         ),
+        sep: (
+          dash: "densely-dash-dotted"
+        ),
+        footer-style: (
+          align: center + horizon,
+          sep-thickness: 0pt,
+        ),
         title: titex,
         t,
-        footer: footer,
+        footer: small(footer),
     )}
 
 // Commentary box
@@ -122,14 +135,15 @@
         #if img.path.len() > 0 {
             [
                 #show: rest => align(center + horizon)[#rest]
+                #v(1em)
                 #stack(
                   dir: ltr,
-                  spacing: 20pt,
+                  spacing: 30pt,
                   [
                     #figure(
                         image(
                             img.path,
-                            height: 50pt,
+                            height: 70pt,
                             alt: head + " Molecular Structure",
                         ),
                         caption: img.at("caption", default: head) 
@@ -139,16 +153,19 @@
                     set text(size: 10pt)
                     set align(left)
                     set list(marker: "▮▯")
-                    prop-list
+                    block(
+                      prop-list
+                    )
                   }
                 )
-
-                #if content.has("children") and content.children.len() > 0 {
-                    v(10pt)
-                    line(length: 50%)
-                    set text(size: 10pt)
-                    content
-                }
+                #v(10pt)
+                // #if content.has("children") and content.children.len() > 0 {
+                //     // line(
+                //     //   length: 100%
+                //     // )
+                //     set text(size: 10pt)
+                //     content
+                // }
             ]
         }
     ]
@@ -184,6 +201,7 @@
   phyto-component(
     head: title,
     content: desc,
+    footer: desc,
     prop-list: pr,
     img: (
       path: pa,
@@ -233,11 +251,24 @@
   showybox(
     frame: (
     border-color: white,
-    body-color: olive.lighten(80%)
+    body-color: rgb("#543327")
+      .lighten(80%)
+      .desaturate(20%)
+      .mix(
+        red
+          .lighten(90%)
+          .desaturate(50%)
+          .transparentize(10%)
+      )
   ),
   shadow: (
-	  offset: (x: 2pt, y: 3pt),
-    color: yellow.lighten(70%)
-  ), content
+	  offset: (x: 3pt, y: 2pt),
+    color: rgb("#543327").lighten(20%)
+  ), 
+  pad(
+    rest: 3pt,
+    top: 9pt,
+    content
+  )
   )
 }

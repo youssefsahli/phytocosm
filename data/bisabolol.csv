@@ -1,0 +1,7 @@
+Protéine,Localisation,Rôle
+Bcl-2,"Membrane externe mitochondriale; Reticulum endoplasmique; Enveloppe nucléaire","Stabilise la membrane"
+Bax,"Cytosol au repos → translocation vers la membrane externe mitochondriale après stress","Forme des pores et favorise la sortie du cytochrome c"
+p53,"Noyau (facteur de transcription)","Induction d'expression de Bax, PUMA, NOXA"
+Apaf-1,"Cytosol","Liaison au cytochrome c"
+Caspase-9,"Cytosol","Clive et active la Caspase-3"
+Caspase-3,"Cytosol","Clive protéines structurales/ADN"

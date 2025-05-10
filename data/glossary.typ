@@ -19,7 +19,7 @@
 // #show: init-glossary.with(yaml("glossary.yaml"),)
 
 #let capitalize(word) = {
-  return upper(word.first()) + word.slice(1)
+  return upper(word.first() + word.slice(1))
 }
 
 #let T1 = (
@@ -38,7 +38,7 @@
       // align(center, line(length: 80%))
       set text(font: body-font, size: 12pt)
       align(center, 
-        text(font: body-font,size: 1.3em, weight: "bold", fill: gray.darken(80%))[
+        text(font: body-font,size: 12pt, weight: "bold", fill: gray.darken(80%))[
          #upper(name)
         ]
       )
