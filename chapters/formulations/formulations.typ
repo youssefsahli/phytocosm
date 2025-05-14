@@ -11,4 +11,5 @@ Ces combinaisons ne sont pas neutres : certaines molécules, telles que les flav
 Dans cette partie, seront analysées les formulations les plus représentatives du marché, leurs justifications scientifiques éventuelles, ainsi que les limites des allégations commerciales les accompagnant.
 ]
 
-#chapter("/chapters/formulations/review.typ", pb: false) 
+#chapter("/chapters/formulations/typology.typ", pb: false) 
+#chapter("/chapters/formulations/review.typ") 

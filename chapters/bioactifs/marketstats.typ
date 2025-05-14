@@ -1,5 +1,5 @@
 #import "/template.typ": desc, annexe, hdesc
-#import "/boxes.typ": gnote
+#import "/boxes.typ": gnote, showybox
 == Le marché des phytocosmétiques <market-study>
 #desc[
   Étude de la place des principes actifs originaires de plantes dans le marché des cosmétiques actuel, en France et dans le monde.
@@ -73,13 +73,10 @@ Une première observation montre qu’une majorité des produits figurant parmi 
     ),)
 ] )
 
-#figure(
-  caption: [Proportion de cosmétiques contenant des phytocomposants parmi les Amazon France _bestsellers_ · _(adjusted weight)_],
-  image(height: 26%, "total.png"))
-
 #hdesc[
   Dans les métabolites II#super[aires] les plus utilisés (@lollipop-1), on retrouvera:
-  #columns(2)[
+  #box(
+    columns(2)[
     - Huile de tournesol
     - Huile de coco
     - Jus de feuille d'Aloe _vera_
@@ -91,23 +88,56 @@ Une première observation montre qu’une majorité des produits figurant parmi 
     - Jus de noix de coco
     - Gypsophile paniculée (racine)
     - Dattier du désert (fruit)
-]]
-
-#figure(
-    caption: [Liste des top ingrédients utilisés par les cosmétiques bestsellers d'Amazon France · _(adjusted weight)_],
+  ])
+]
+#{
+    // show figure.caption: c => {
+    //   text(size: 9pt, c)
+    // }
+    show grid.cell: c => context {
+      box(
+        fill: luma(260),
+        stroke: luma(240),
+        outset: 4pt,
+        c
+      )
+    }
     grid(
-      columns: (1fr, 1fr),
-      align: horizon,
-      figure(
+    columns: (1fr, 1fr),
+    rows: (30%,),
+    // rows: (150pt),
+    // rows: (1fr,),
+    column-gutter: 20pt,
+    row-gutter: 5pt,
+    figure(
+      placement: none,
+    caption: [Proportion de cosmétiques contenant des phytocomposants parmi les Amazon France _bestsellers_],
+    image(width: 100%,"total.png")),
+  
+    figure(
+      placement: none,
+      caption: [Liste des top ingrédients utilisés par les cosmétiques bestsellers d'Amazon France],
+      box(
+        height: 77%,
+        width: 100%,
+        // width: 77
+        text(
+        size: 9pt,
         table(
-          columns: 2,
-          ..csv("/data/ingredients_sorted.csv").flatten()
-        ),
+        columns: (1fr,)*2,
+        ..csv("/data/ingredients_sorted.csv").flatten()
+        ))
       ),
-      
-      image(width: 100%, "ingredient_list_lollipop.png")
     ),
-  ) <lollipop-1>
+    grid.cell(colspan: 2)[#figure(
+      placement: none,
+      pad(
+        rest: 40pt,
+        image(width: 100%,"ingredient_list_lollipop.png") )
+    ) <lollipop-1>]
+  ) 
+}
+
 
 #annexe[
   #hdesc[

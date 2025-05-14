@@ -156,7 +156,7 @@
       
     show heading: it => {
         set text(size: header-font-size)
-        context {
+           {
             if it.level > 1 {
                 it
             } else {
@@ -180,7 +180,8 @@
             fill: sepia-bg,
             [
                 #v(0.3em)
-                #emph(it)]
+                #emph(it)
+            ]
         )
     }
 
@@ -270,6 +271,8 @@
         bookmarked: true,
     )
 
+    show heading.where(level: 3): set text(size: 15pt)
+
     set page(
         paper: "a4",
         margin: auto,
@@ -319,7 +322,8 @@
           inset: (x: 3pt, y: 3pt),
           outset: (y: 3pt),
           height: 1em,
-          fill: sepia-bg.lighten(50%),
+          fill: sepia-bg.lighten(80%),
+          stroke: sepia-bg.lighten(50%),
           text(
           weight: "extralight",
           L
@@ -355,7 +359,8 @@
           }
           let c = pc.lighten(70%).transparentize(70%)
           rect(
-            fill: c,
+            fill: c.lighten(50%),
+            stroke: c,
             radius: 5pt,
             L
           ) 

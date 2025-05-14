@@ -1,9 +1,131 @@
-#import "/template.typ": desc, annexe, hdesc
+#import "/template.typ": desc, annexe, hdesc, mono-font
 #import "/boxes.typ": *
 
 == Actifs phares de la recherche actuelle
 #desc[
   Liste de plantes d'intérêt en cosmétique encore méconnues. Discussion des bénéfices et des risques associés, ainsi que de l'état des connaissances sur leur pharmacodynamie.
+]
+
+#annexe[
+  #show raw: t => {
+    set text(
+      font: "Iosevka Fixed SS02", 
+      size: 8pt,
+    )
+    showybox(
+      breakable: true,
+      frame: (
+        body-color: gradient.linear(
+          gray.lighten(90%),
+          white.transparentize(100%)
+        ),
+        footer-color: white,
+        border-color: gray.lighten(60%),
+        thickness: (left: 1pt),
+        radius: 15pt,
+      ),
+      t
+    )
+  }
+
+  #hdesc[
+    Utilisation de l’API PubMed EDirect @kans_entrez_2025 pour extraire le nombre de publications scientifiques annuelles associées à chaque phytocomposant étudié. Les données ont été normalisées par année et par terme afin de permettre une comparaison relative de la dynamique de recherche entre les différentes molécules.
+  ]
+  
+  ```sh
+    MOLECULES=(
+      "bakuchiol"
+      "centella asiatica"
+      "chamazulene"
+      "glabridin"
+      "ellagic acid"
+      "bisabolol"
+      "epigallocatechin"
+      "ferulic acid"
+      "resveratrol"
+      "nigella sativa"
+    )
+    
+    for mol in "${MOLECULES[@]}"; do
+      echo "▶ Processing: $mol"
+      python fetch_and_plot_pubmed.py "$mol"
+    done
+  ```
+
+  ```py
+  import subprocess
+  import pandas as pd
+  import matplotlib.pyplot as plt
+  import seaborn as sns
+  import argparse
+  import re
+  from pathlib import Path
+  
+  
+  def fetch_pubmed_data(molecule, output_file):
+      query = f'esearch -db pubmed -query "{molecule}" | efetch -format docsum | xtract -pattern DocumentSummary -element Id,PubDate'
+      try:
+          result = subprocess.run(query, shell=True, check=True, capture_output=True, text=True)
+          with open(output_file, 'w') as f:
+              f.write(result.stdout)
+      except subprocess.CalledProcessError as e:
+          print("Error fetching data:", e.stderr)
+          exit(1)
+  
+  
+  def plot_hits_per_year(tsv_file, molecule):
+      df = pd.read_csv(tsv_file, sep="\t", names=["PMID", "PubDate"], dtype=str)
+      df["Year"] = df["PubDate"].str.extract(r"(\d{4})").astype(float).astype("Int64")
+      df = df.dropna(subset=["Year"])
+      year_counts = df["Year"].value_counts().sort_index()
+  
+      plt.figure(figsize=(10, 5))
+      sns.barplot(x=year_counts.index, y=year_counts.values, palette="crest")
+      plt.xlabel("Year")
+      plt.ylabel("Nombre de publications")
+      plt.title(f"Publications par année pour '{molecule}'")
+      plt.xticks(rotation=45)
+      plt.tight_layout()
+      plt.grid(axis='y')
+  
+      output_path = Path(tsv_file).with_suffix(".png")
+      plt.savefig(output_path)
+      plt.show()
+  
+  
+  def main():
+      parser = argparse.ArgumentParser(description="Fetch PubMed data and plot yearly hits.")
+      parser.add_argument("molecule", help="Name of the molecule to search for (PubMed query)")
+      args = parser.parse_args()
+  
+      tsv_file = f"{args.molecule}_pmids.tsv"
+      fetch_pubmed_data(args.molecule, tsv_file)
+      plot_hits_per_year(tsv_file, args.molecule)
+  
+  
+  if __name__ == "__main__":
+      main()
+  ```
+  #grid(
+  {
+    for mol in (
+    "bakuchiol",
+    "centella asiatica",
+    "chamazulene",
+    "glabridin",
+    "ellagic acid",
+    "bisabolol",
+    "epigallocatechin",
+    "ferulic acid",
+    "resveratrol",
+    "nigella sativa"
+    ) {
+      image(
+        "/img/graphs/" + mol+"_pmids.png"
+      )
+    }
+  }
+  ) 
 ]
 === Bakuchiol
 #wrp(
@@ -114,37 +236,45 @@ Ainsi, Centella asiatica s’impose comme un actif végétal polyvalent — cica
 === Glabridine
 
 Glycyrrhiza glabra (L.) est une plante vivace de la famille des Fabaceae, et originaire du bassin méditerranéen; ses rhizomes et racines sont récoltés depuis l'antiquité pour leurs propriétés médicinales et aromatiques @pastorino_liquorice_2018[p. 1]. Utilisée traditionnellement comme édulcorant naturel et remède contre les troubles digestifs, Glycyrrhiza glabra est également étudiée pour ses composés bioactifs, qui présentent une activité antioxydante, anti-inflammatoire et dépigmentante.
-La glabridine (@mol-glabridine) est un isoflavonoïde prenylé #footnote[il contient un _prenyl_ -- C#sub[5]H#sub[9], 3-methyl-2-butenyl lié à son cycle aromatique; cela lui confère sa lipophilie.] contenue dans ses racines, et en moindre concentration dans ses feuilles @pastorino_liquorice_2018[p. 2].
+La glabridine (@mol-glabridine) est un isoflavonoïde prenylé #footnote[il contient un _prenyl_ -- C#sub[5]H#sub[9], 3-methyl-2-butenyl lié à son cycle aromatique; cela lui confère sa lipophilie, et favorise donc sa pénétration percutanée.] contenue dans ses racines, et en moindre concentration dans ses feuilles @pastorino_liquorice_2018[p. 2]. L'extration de l'acide glycyrrhizique et de la glabridine se fait par un solvant $frac("éthanol","eau") = frac(30, 70)$ (v/v) puis décoction à 50°C @tian_extraction_2008.
 
 
 #pcomp(
   "Glabridine",
-  [Flavonoïde extrait de la réglisse (*Glycyrrhiza glabra*), utilisé pour ses effets éclaircissants et apaisants.],
+  [Flavonoïde extrait de la réglisse (Glycyrrhiza glabra), utilisé pour ses effets éclaircissants et apaisants.],
   [
-    - Éclaircissant
+    - Inhibition de la tyrosinase #footnote[enzyme clé de la mélanogenèse.]
     - Anti-inflammatoire
     - Antioxydant
   ],
   "/img/mol/Glabridin.svg"
 )
 
-#wrp(
-  box(
-    gnote[
-      #table(
-        [Composants],
-        [Liquiritine],
-        [Glycyrrhizine],
-        [Liquiritigénine],
-        [acide 18β‐Glycyrrhétinique],
-        [Licochalcone A],
-        [Glabridine]
+
+
+#{
+  set text(size: 10pt)
+  figure(
+    caption: [Composés associés à la réglisse],
+    table(
+          // rows: 1fr,
+          columns: (1fr,)*3,
+          align: left,
+          table.header[Composant][Classe][Activité],
+          [Liquiritine], [flavonoïde glycosylé], [éclaircissant, antioxydant, anti-inflammatoire ],
+          [Glycyrrhizine], [saponine triterpénique], [anti-inflammatoire],
+          [acide 18β‐Glycyrrhétinique], [dérivé triterpénique], [apaisant],
+          [Licochalcone A], [chalcone], [anti-inflammatoire, séborégulateur],
+          [Glabridine], [isoflavonoïde prénylé], [anti-inflammatoire, dépigmentant]
       )
-    ]
-  )
-)[
-La glabridine n'est pas la seule molécule contenue dans les racines de réglisse; on retrouve une dizaine de composants dont les cyles aromatiques (phenols) sont responsables de l'effet anti-oxydant observé @rackova_mechanism_2007.
-]
+)
+}
+
+Yanfang Huang _et al_ en 2024 a mis en évidence l'activité anti-inflammatoire d'un gel à base de carbomère contenant de la liquiritine sur la cicatrisation de plaies UV-induites chez la souris, _in vivo_ et _in vitro_. Un test ELISA révéla un moindre activité des cytokines pro-inflammatoires usuelles: @TNF-α, @IL-1, @IL-6 malgré l'irradiation UVB. Une formulation à base de 2% de liquiritine à montré la meilleure activité, et on nota une amélioration de la sensation de prurit, de ré-épithélialisation et de synthèse de collagène.
+
+La glabridine inhibe par compétition l'activité de la tyrosinase -- enzyme jouant un rôle dans la mélanogenèse -- et réduit ainsi les mélasma, lentigos, et taches post-inflammatoires #footnote[on pensera aux tâches de l'adulte acnéiques notamment.] 
+Ce n'est pas la seule molécule contenue dans les racines de réglisse; on retrouve une dizaine de composants dont les cyles aromatiques (phénols) sont responsables de l'effet anti-oxydant observé @rackova_mechanism_2007. Ces derniers sont souvent combinés afin de renforcer leur activité par @Synergie (voir @formulations).
+
 
 #plant(
   "/img/plants/glycyrrhiza.png",
@@ -156,7 +286,7 @@ La glabridine n'est pas la seule molécule contenue dans les racines de régliss
 )
 
 === Acide ellagique
-L'acide ellagique, retrouvé dans #taxon[Punica granatum] mais aussi dans de nombreuses espèces (noix, fraises #taxon[Fragaria ananassa]) est un métabolite retrouvé sous forme libre mais aussi sous forme complexée -- appelées alors _éllagitannins_ @rios_pharmacological_2018. C'est un composé particulièrement intéressant en tant que protecteur de l'oxydation UV-induite.
+L'@EA, retrouvé dans #taxon[Punica granatum] mais aussi dans de nombreuses espèces (noix, fraises #taxon[Fragaria ananassa]) est un métabolite retrouvé sous forme libre mais aussi sous forme complexée -- appelées alors _éllagitannins_ @rios_pharmacological_2018. C'est un composé particulièrement intéressant en tant que protecteur de l'oxydation UV-induite. Son extraction se fait traditionellement par pulvérisation de la plante, puis passage à trois reprises d'un solvant $"acetone"/"eau" = 80/20$ ou methanol @daniel_extraction_1989. L'industrie, elle, utilise un procédé d’extraction assistée par _microjet haute pression_, à partir d'écorce de grenade @_method_2015.
 
 #pcomp(
   "Acide ellagique",
@@ -169,7 +299,18 @@ L'acide ellagique, retrouvé dans #taxon[Punica granatum] mais aussi dans de nom
   "/img/mol/Ellagic_acid.svg"
 )
 
-=== Matricaria chamomilla
+La présence de groupes hydroxyles et de lactones confère à l’@EA une capacité notable à neutraliser divers radicaux libres, notamment les espèces réactives de l’oxygène (ROS) et de l’azote (RNS), tels que les radicaux hydroxyles (HO·), peroxyles (ROO·), dioxyde d’azote (NO₂·) et peroxynitrite (ONOO⁻). Cette activité antioxydante @baek_ellagic_2016 est renforcée par la stimulation des enzymes endogènes de défense, notamment la @SOD, la @CAT et la glutathion peroxydase, contribuant ainsi à la protection contre le stress oxydatif.
+L’application topique d’@EA à des concentrations de 1 à 10 μM a démontré une réduction significative de la production des cytokines pro-inflammatoires @IL-1 et @IL-6, ainsi qu’une diminution de l’expression de la molécule d’adhésion cellulaire ICAM-1 (Intercellular Adhesion Molecule-1) dans le derme. Cette molécule joue un rôle essentiel dans le recrutement des leucocytes en facilitant leur adhésion à l’endothélium vasculaire et leur migration vers les sites inflammés. La modulation de son expression par l’@EA se traduit par une réduction de l’infiltration des macrophages inflammatoires dans la peau de souris glabres exposées aux rayons UVB, suggérant un effet anti-inflammatoire significatif en contexte de photodommage cutané. @rios_pharmacological_2018
+Une étude in vitro a évalué les effets de l'@EA sur des kératinocytes humains HaCaT exposés à une irradiation @UVB (100 mJ/cm²). Les cellules traitées avec 5 μM d'@EA ont montré une réduction significative de l'expression des cytokines pro-inflammatoires @IL-6, IL-8 et @TNF-α, tout en augmentant l'expression de l'IL-10, une cytokine anti-inflammatoire. Ces résultats suggèrent que l'@EA module la réponse inflammatoire induite par les @UVB en régulant l'expression des cytokines.
+
+Une étude publiée dans International Journal of Molecular Sciences @gil_anti-inflammatory_2021 (Tae-Young Gil, Chul-Hee Hong and Hyo-Jin An) a examiné les effets de l'@EA sur des kératinocytes humains HaCaT stimulés par le TNF-α et l'IFN-γ, deux cytokines pro-inflammatoires impliquées dans les pathologies cutanées inflammatoires -- notamment la dermatite atopique. Les résultats ont montré que l'EA, à des concentrations allant jusqu'à 1000 μM, inhibe significativement la production de cytokines inflammatoires telles que l'@IL-6 et le @TNF-α. De plus, l'EA supprime l'expression de chimiokines associées à la réponse Th2, notamment TSLP, RANTES, MDC et TARC.
+Sur le plan des voies de signalisation, l'EA réduit la phosphorylation des protéines clés des voies MAPK (MEK1/2-ERK, SEK1/MKK4-JNK) et JAK/STAT (JAK2, STAT1, STAT3), ainsi que la translocation nucléaire de STAT1 phosphorylé. Ces mécanismes suggèrent que l'EA atténue l'inflammation cutanée en modulant les voies de signalisation intracellulaires essentielles à la production de médiateurs inflammatoires.
+
+Ces résultats indiquent que l'@EA possède un potentiel thérapeutique pour le traitement des affections cutanées inflammatoires, telles que la dermatite atopique, en inhibant les voies de signalisation inflammatoires dans les kératinocytes.
+
+De plus, l'étude a observé que l'EA n'affectait pas significativement l'expression de l'IL-1β dans ce modèle cellulaire. Ces données indiquent que l'EA pourrait être un agent actif prometteur pour les formulations cosmétiques visant à atténuer l'inflammation cutanée induite par les UVB.
+
+=== α-Bisabolol
 
 #wrp(
   align: right + bottom,
@@ -218,6 +359,48 @@ Bien qu'utilisé depuis de nombreuses années par les industriels cosmétiques, 
   fsize: 20%
 )
 
-De nombreuses autre plantes contiennent du bisabolol, 
+De nombreuses autres plantes contiennent du bisabolol, bien que souvent en quantités moindres que la camomille allemande (*Matricaria recutita*) ou le bois de candeia (*Vanillosmopsis erythropappa*). On le retrouve ainsi dans les huiles essentielles de *Salvia runcinata*, *Eremanthus erythropappus*, *Myoporum crassifolium* (Faux Santal), ou encore dans certaines variétés de *Tanacetum annuum* (La camomille bleue). La qualité et la stéréochimie du bisabolol extrait (notamment la pureté en α-bisabolol) dépendent fortement de l’espèce végétale, du terroir, du mode d’extraction et du stockage, ce qui influence son efficacité pharmacologique et sa tolérance cutanée.
 
-Le Chamazulène
+=== Chamazulène
+
+Constituent extrait de #taxon[Matricaria recutita], exerçant des propriétés anti-inflammatoires par inhibition des leucotriènes pro-inflammatoires B4 produites par les granulocytes neutrophiles @safayhi_chamazulene_1994;
+
+#pcomp(
+  "Chamazulène",
+  [un sesquiterpène aromatique dérivé du matricin, présent dans les huiles essentielles de #taxon[Matricaria chamomilla] et d'#taxon[Artemisia absinthium]],
+  [
+    - Inhibe la formation de leucotriène B4 (IC50 ≈ 10–15 µM)
+    - Antioxydant puissant (ABTS IC50 ≈ 3,7 µg/mL)
+    - Réduit l'expression de @COX-2 et la production de PGE2
+  ],
+  "/img/mol/Chamazulene.svg"
+)
+
+Ding Ma, Jinlong He & Dapeng He (2019) met en évidence l'inhibition des @MMP:plural:both 3 et 9, de la @COX-2:both, et de la @iNOS:both dans des modèles cellulaires stimulés par @IL-1. Ces effets sont associés à une modulation négative de la voie de signalisation @VoieNFkB, essentielle dans la réponse inflammatoire. @ma_chamazulene_2020
+
+#image("img/chamazulene_per_year.png")
+
+=== Epigallocatéchine gallate
+
+  Retrouvé dans la spécialité VEREGEN déremboursée
+#pcomp(
+  "Epigallocatéchine gallate",
+  [@EGCG:both, un type de catéchine retrouvé dans les feuilles de #taxon[Camelia sinensis]],
+  [
+    - Neutralise les @ROS, réduit le stress oxydatif
+    - Inhibe @VoieNFkB, diminue @IL-6 et @TNF-α
+    - Protège les kératinocytes des @UVB
+    - Chélate le Fe#super[3+] et le Cu#super[2+] #footnote[pro-oxydants]
+    - Régule @ERK1_2, @JNK:short et @p38
+    - Réduit les @MMP
+  ],
+  "/img/mol/Epigallocatechin_Gallate.svg"
+)
+
+
+
+=== Acide férulique
+
+=== Resvératrol
+
+=== Nigella sativa (huile)

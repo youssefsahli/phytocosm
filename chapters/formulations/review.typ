@@ -1,6 +1,8 @@
 #import "/boxes.typ": *
 
-== Revue des fornulations cosmétiques dans les produits à succès
+== Limites et controverses
 #desc[
-  Analyse technique des formulations récurrentes dans les produits cosmétiques à succès : évaluation de la validité scientifique des revendications marketing
+  Évaluation de la validité scientifique des revendications marketing, état des lieux des essais cliniques, risques associés.
 ]
+
+=== Synergies observées

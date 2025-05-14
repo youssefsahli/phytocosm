@@ -13,6 +13,9 @@ Certains peuvent être synthétisées par laboratoire @tai_biosynthesis_2023, un
 (
   #annexe[
     #let data = csv("ingr_ambigus.csv")
+    #hdesc[
+      Certains composés, à l'image du bisabolol, existent naturellement dans plusieurs espèces végétales mais sont fréquemment obtenus par synthèse ou hémisynthèse dans les formulations cosmétiques modernes. Cette double origine – naturelle et industrielle – constitue une ambiguïté récurrente parmi les ingrédients revendiquant une « origine végétale ». 
+    ]
     #set text(size: 11pt)
     #figure(
       table(
@@ -27,3 +30,4 @@ Certains peuvent être synthétisées par laboratoire @tai_biosynthesis_2023, un
     )
    ]
 )
+Le concept de _Green chemistery_ créé dans les années 90, fut un élément important dans l'appréciation des acheteurs dans les produits _verts_ -- non seulement naturels, mais provenant d'une industrie respectueuse de l'environnement @bozza_current_2022. Cet intérêt s'est traduit par la création de nombreuses @orgs[certifications], afin de régulariser et garantir l'origine des cosmétiques vendus à des consommateurs de plus en plus attentifs.

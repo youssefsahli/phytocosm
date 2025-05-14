@@ -114,6 +114,30 @@
     text()[#strong(genus) #emph(species)]
 }
 
+#let mol(path, caption, width: auto, height: auto) = {
+    // show figure.caption: c => context {
+    //   let (width, height) = measure(c)
+    //   line(length: width)
+    //   c
+    // }
+    figure(
+      placement: none,
+      gap: 15pt,
+      image(
+        path,
+        width: width,
+        height: height,
+        fit: "cover"
+      ),
+      caption: [
+        #caption
+      ],
+      supplement: [Molécule],
+      kind: "Molécule",
+      numbering: "A"
+    )
+}
+
 #let phyto-component(
     head: "",
     content: [],
@@ -241,7 +265,7 @@
             radius: 10pt,
             image(height: fsize, fp))),
       )
-  )
+  ) 
     v(1em)
 }
 

@@ -70,6 +70,10 @@ ROS:
   plural: ROS
   long: espèces réactives de l’oxygène
 
+ROL:
+  short: ROL
+  long: rétinol
+
 CREB:
   short: CREB
   long: cAMP-response element-binding protein
@@ -95,7 +99,7 @@ RNS:
   short: RNS
   long: espèces réactives de l’azote
   description: >
-    Molécules dérivées de l'oxyde nitrique (NO) et du superoxyde (O₂•⁻), telles que le peroxynitrite (ONOO⁻), le dioxyde d'azote (•NO₂) et le trioxide de diazote (N₂O₃). Les RNS sont produites par l'activité enzymatique de la NO-synthase inductible (iNOS) et de la NADPH oxydase, notamment dans les macrophages activés par l'IFN-γ ou le LPS. Elles participent aux défenses immunitaires, à la signalisation cellulaire et au stress nitrosatif, en modifiant lipides, protéines et ADN.
+    Molécules dérivées de l'oxyde nitrique (NO) et du superoxyde (O₂•⁻), telles que le peroxynitrite (ONOO⁻), le dioxyde d'azote (•NO₂) et le trioxide de diazote (N₂O₃). Produites par l'activité enzymatique de la NO-synthase inductible (iNOS) et de la NADPH oxydase, notamment dans les macrophages activés par l'IFN-γ ou le LPS. Elles participent aux défenses immunitaires, à la signalisation cellulaire et au stress nitrosatif, en modifiant lipides, protéines et ADN.
   group: Définitions
 
 TEWL:
@@ -129,6 +133,32 @@ ERK1_2:
 JNK:
   short: JNK
   long: Kinase N-terminale de c-Jun
+
+IL-8:
+  short: IL-8
+  long: Interleukine-8
+  longplural: interleukines-8
+
+TSLP:
+  short: TSLP
+  long: Thymic Stromal Lymphopoietin
+
+MDC:
+  short: MDC
+  long: Macrophage-Derived Chemokine
+  longplural: macrophage-derived chemokines
+
+TARC:
+  short: TARC
+  long: Thymus and Activation-Regulated Chemokine
+
+RANTES:
+  short: RANTES
+  long: Regulated upon Activation, Normal T cell Expressed and Secreted
+
+EA:
+  short: EA
+  long: acide ellagique
 
 COX-2:
   short: COX-2

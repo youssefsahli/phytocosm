@@ -68,14 +68,17 @@
       text(style: "italic", [: #entry.description])
     }
 
-    let refs = text(
+    let refs = box(
+      text(
         size: 0.8em,
         fill: gray.darken(20%),
          {
            show regex("󰖂\\s*"): t => []
+           show ",": none
            entry.pages
         }
       )
+    )
     rect(
       fill: silver.transparentize(90%).lighten(50%),
       outset: .5em,
@@ -85,7 +88,7 @@
           size: 0.9em,
           {
             grid(
-              columns: (1fr, auto),
+              columns: (100%),
               gutter: 1em,
               [#short-display#entry.label#long-display#description#entry.label],
               [#refs]
